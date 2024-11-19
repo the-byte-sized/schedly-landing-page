@@ -36,7 +36,7 @@ header h1 span {
 
 
 header nav {
-    box-shadow: 0px 2px 10px rgba(0,0,0, 0.1);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 0.2) !important;
     -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
     backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
@@ -58,14 +58,77 @@ header nav {
 }
 
 #editor {
-    width: 800px; 
-    height: 400px;
+    width: 800px;
+    height: 600px;
     z-index: 1;
+    pointer-events: none;
+    user-select: none;
+}
+
+.monaco-editor {
+    user-select: none;
 }
 
 #calendar {
     z-index: 1;
     background-color: white;
     height: 100%;
-    width: 400px;
+    width: 600px;
+}
+
+#calendar .fc-header-toolbar.fc-toolbar {
+    margin: 0;
+}
+
+.fc-header-toolbar.fc-toolbar * {
+    display: none;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+    background-color: transparent !important;
+    font-weight: normal !important;
+}
+
+.fc-scrollgrid,
+.fc-scroller {
+    overflow: hidden !important;
+}
+
+.fc .fc-daygrid-day-number {
+    background-color: #4b91e2;
+    border-radius: 5px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    color: white;
+    text-decoration: none;
+    width: 25px;
+    text-align: center;
+}
+
+.fc-col-header-cell-cushion {
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    background-color: #4b91e2;
+}
+
+.fc-daygrid-day-events {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.fc-event {
+    /* height: 20px; */
+    font-size: small;
+}
+
+.fc-event-title {
+    color: black;
+}
+
+.fc-daygrid-day-events {
+    position: absolute !important;
+    bottom: 0 !important;
 }
