@@ -37,17 +37,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             overviewRulerLanes: 0, // Disabilita l'overview ruler,
         });
 
-        // Prevenire modifiche manuali intercettando gli eventi di input
-        editor.onDidChangeModelContent((e) => {
-            // Reverti ogni modifica apportata dall'utente
-            const model = editor.getModel();
-            const currentValue = model.getValue();
-
-            // Resetta il contenuto alla versione precedente
-            model.setValue(currentValue);
-            console.log("Modifica bloccata!");
-        });
-
         calendar.render();
 
         await appendCode(editor, `const { calendarId } = await schedly.createEntity();`, 25);
@@ -59,158 +48,158 @@ document.addEventListener('DOMContentLoaded', async () => {
     cronExpression: "*/30 16-18 * * 2-6",
     type: "whitelist",
     calendarId
-});`, 20, () => {
+});`, 15, () => {
             calendar.addEvent({
                 start: '2024-11-01',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-02',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-05',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-06',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-07',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-08',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-09',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-12',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-13',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-14',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-15',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-16',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-19',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-20',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-21',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-22',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-23',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-26',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-27',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-28',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-29',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-30',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
         });
@@ -222,18 +211,18 @@ document.addEventListener('DOMContentLoaded', async () => {
     cronExpression: "* * * * 0-2",
     type: "blacklist",
     calendarId
-});`, 25, () => {
+});`, 20, () => {
             calendar.addEvent({
                 start: '2024-11-03',
                 display: 'background',
-                color: 'red',
+                color: '#cf021a',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-04',
                 display: 'background',
-                color: 'red',
+                color: '#cf021a',
                 allDay: true
             });
 
@@ -241,42 +230,42 @@ document.addEventListener('DOMContentLoaded', async () => {
                 id: '1',
                 start: '2024-11-10',
                 display: 'background',
-                color: 'red',
+                color: '#cf021a',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-11',
                 display: 'background',
-                color: 'red',
+                color: '#cf021a',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-17',
                 display: 'background',
-                color: 'red',
+                color: '#cf021a',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-18',
                 display: 'background',
-                color: 'red',
+                color: '#cf021a',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-24',
                 display: 'background',
-                color: 'red',
+                color: '#cf021a',
                 allDay: true
             });
 
             calendar.addEvent({
                 start: '2024-11-25',
                 display: 'background',
-                color: 'red',
+                color: '#cf021a',
                 allDay: true
             });
         }
@@ -300,7 +289,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             calendar.addEvent({
                 start: '2024-11-10',
                 display: 'background',
-                color: 'green',
+                color: 'darkseagreen',
                 allDay: true
             });
         });
@@ -315,9 +304,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         description: 'Follow-up',
         customerName: 'Claudio',
         customerSurname: 'Cortese',
-        fidelityCardId: 2
     }
-});`, 20, () => {
+});`, 15, () => {
             // Rimuovere un evento specifico dopo la creazione
             const event = calendar.getEventById('1'); // Trova l'evento con ID "1"
 
