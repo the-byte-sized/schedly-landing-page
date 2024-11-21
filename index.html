@@ -63,7 +63,7 @@
 
   <body class="overflow-x-hidden mw-100">
     <header>
-      <nav class="navbar navbar-expand-lg fixed-top">
+      <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#"> Schedly </a>
 
@@ -85,13 +85,9 @@
           >
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#overview"
+                <a class="nav-link fs-5" aria-current="page" href="#overview"
                   >Overview</a
                 >
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
               </li>
 
               <li class="nav-item">
@@ -104,7 +100,7 @@
             </ul>
 
             <div
-              class="d-flex gap-3 align-items-center position-absolute start-100 w-100"
+              class="d-none d-lg-flex gap-3 align-items-center position-absolute start-100 w-100"
             >
               <button
                 class="btn btn-lg rounded-pill text-white hvr-ripple-out hvr-icon-forward hvr-shadow"
@@ -123,7 +119,7 @@
       >
         <h1 class="text-center" data-aos="zoom-in" data-aos-delay="300">
           Scheduling Made Simple.
-          <span class="fw-bold" data-aos="zoom-in" data-aos-delay="900"
+          <span class="fw-bold" data-aos="zoom-in" data-aos-delay="600"
             >Tailored to Your Workflow</span
           >
         </h1>
@@ -141,7 +137,7 @@
         <div
           class="d-flex align-items-center justify-content-between gap-4 mt-4 mb-4"
         >
-          <div class="d-flex align-items-center justify-content-between gap-2">
+          <div class="d-flex align-items-center justify-content-between gap-2" data-aos="slide-left">
             <i
               class="fa-solid fa-check"
               style="color: #50e2c3; font-size: 22px"
@@ -150,7 +146,7 @@
             <p class="m-0 fw-light">Seamless Integration</p>
           </div>
 
-          <div class="d-flex align-items-center justify-content-between gap-2">
+          <div class="d-flex align-items-center justify-content-between gap-2" data-aos="zoom-in">
             <i
               class="fa-solid fa-check"
               style="color: #50e2c3; font-size: 22px"
@@ -159,7 +155,7 @@
             <p class="m-0 fw-light">Maximum Flexibility</p>
           </div>
 
-          <div class="d-flex align-items-center justify-content-between gap-2">
+          <div class="d-flex align-items-center justify-content-between gap-2" data-aos="slide-right">
             <i
               class="fa-solid fa-check"
               style="color: #50e2c3; font-size: 22px"
@@ -171,7 +167,7 @@
 
         <div
           id="editor-calendar-container"
-          class="d-flex align-items-center justify-content-center gap-5"
+          class="align-items-center justify-content-center gap-5 d-none d-md-flex"
         >
           <div id="editor" data-aos="fade-right" data-aos-duration="1000"></div>
 
@@ -185,98 +181,93 @@
       </div>
     </header>
 
-    <main>
-      <section id="overview" class="pt-5 mb-5 position-relative">
-        <div
-          class="container d-flex flex-column gap-5 h-100 align-items-center justify-content-center mt-5"
-        >
-          <div
-            class="d-flex align-items-stretch justify-content-between gap-3 mt-5"
-          >
-            <div
-              class="feature-card rounded-5"
-              data-aos="slide-right"
-              data-aos-anchor="#overview"
-            >
+    <main data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="74" tabindex="0">
+      <section id="overview" class="pt-5 mb-5 h-100">
+        <div class="container mt-5">
+          <div class="row row-gap-5">
+            <div class="col-sm-12 col-lg-4">
               <div
-                class="d-flex flex-column align-items-center gap-2"
-                data-aos="fade-down"
+                class="feature-card rounded-5 h-100"
+                data-aos="slide-right"
+                data-aos-anchor="#overview"
               >
-                <i class="fa-solid fa-shapes fa-2x"></i>
-
-                <h1 class="fs-3">1. Create entities</h1>
+                <div
+                  class="card-title d-flex flex-column align-items-center gap-2"
+                  data-aos="fade-down"
+                >
+                  <i class="fa-solid fa-shapes fa-2x fa-fw"></i>
+                  <h1 class="fs-3">1. Create entities</h1>
+                </div>
+                <p class="fw-light" data-aos="fade-up" data-aos-delay="200">
+                  An entity is a flexible concept. It can represent a calendar,
+                  a barbershop, a personal agenda, or even a task list. Its
+                  meaning adapts to your needs.
+                </p>
+                <!-- <p>
+                  An entity is a flexible concept. You can think of it as a
+                  calendar, if you like, but it can also represent something
+                  broader, like a barbershop, a personal agenda, or a task list.
+                  The choice is yours.
+                </p> -->
               </div>
-
-              <p class="fw-light" data-aos="fade-up" data-aos-delay="200">
-                An entity is a flexible concept. It can represent a calendar, a
-                barbershop, a personal agenda, or even a task list. Its meaning
-                adapts to your needs.
-              </p>
-
-              <!-- <p>
-                An entity is a flexible concept. You can think of it as a
-                calendar, if you like, but it can also represent something
-                broader, like a barbershop, a personal agenda, or a task list.
-                The choice is yours.
-              </p> -->
             </div>
 
-            <div class="feature-card rounded-5" data-aos="zoom-in">
-              <div
-                class="d-flex flex-column align-items-center gap-2"
-                data-aos="fade-down"
-                data-aos-delay="100"
-              >
-                <i class="fa-solid fa-filter fa-2x"></i>
-
-                <h1 class="fs-3">2. Add exceptions</h1>
+            <div class="col-sm-12 col-lg-4">
+              <div class="feature-card rounded-5 h-100" data-aos="zoom-in">
+                <div
+                  class="card-title d-flex flex-column align-items-center gap-2"
+                  data-aos="fade-down"
+                  data-aos-delay="100"
+                >
+                  <i class="fa-solid fa-filter fa-2x fa-fw"></i>
+                  <h1 class="fs-3">2. Add exceptions</h1>
+                </div>
+                <p class="fw-light" data-aos="fade-up" data-aos-delay="300">
+                  Exceptions in Schedly, either blacklist or whitelist, can be
+                  one-time or recurring (via cron). Use them for business hours,
+                  employee leave, or resource unavailability—fully customizable.
+                </p>
+                <!-- <p>
+                  Exceptions come in two types: blacklist and whitelist. They can
+                  be one-time or recurring, defined using cron-like expressions.
+                  This flexibility allows you to adapt them to your specific
+                  needs—whether it's setting business and closing hours, managing
+                  employee leave, or marking a specific cinema seat as unavailable
+                  at a given time. The choice is yours.
+                </p> -->
               </div>
-
-              <p class="fw-light" data-aos="fade-up" data-aos-delay="300">
-                Exceptions in Schedly, either blacklist or whitelist, can be
-                one-time or recurring (via cron). Use them for business hours,
-                employee leave, or resource unavailability—fully customizable.
-              </p>
-
-              <!-- <p>
-                Exceptions come in two types: blacklist and whitelist. They can
-                be one-time or recurring, defined using cron-like expressions.
-                This flexibility allows you to adapt them to your specific
-                needs—whether it's setting business and closing hours, managing
-                employee leave, or marking a specific cinema seat as unavailable
-                at a given time. The choice is yours.
-              </p> -->
             </div>
 
-            <div class="feature-card rounded-5" data-aos="slide-left">
-              <div
-                class="d-flex flex-column align-items-center gap-2"
-                data-aos="fade-down"
-                data-aos-delay="200"
-              >
-                <i class="fa-solid fa-list-check fa-2x"></i>
-
-                <h1 class="fs-3">3. Schedule events</h1>
+            <div class="col-sm-12 col-lg-4">
+              <div class="feature-card rounded-5 h-100" data-aos="slide-left">
+                <div
+                  class="card-title d-flex flex-column align-items-center gap-2"
+                  data-aos="fade-down"
+                  data-aos-delay="200"
+                >
+                  <i class="fa-fw fa-solid fa-list-check fa-2x"></i>
+                  <h1 class="fs-3">3. Schedule events</h1>
+                </div>
+                <p class="fw-light" data-aos="fade-up" data-aos-delay="400">
+                  Easily find slots and add events effortlessly. What’s an
+                  event? It’s whatever you need—doctor’s appointment, team call,
+                  or more, customizable via metadata.
+                </p>
+                <!-- <p>
+                  Easily find available slots and add events effortlessly. But
+                  what is an event, exactly? Its meaning is entirely up to you.
+                  With the metadata field, you can define it however you
+                  like—whether it’s a doctor’s appointment or team calls for your
+                  dev project. The choice is yours.
+                </p> -->
               </div>
-
-              <p class="fw-light" data-aos="fade-up" data-aos-delay="400">
-                Easily find slots and add events effortlessly. What’s an event?
-                It’s whatever you need—doctor’s appointment, team call, or more,
-                customizable via metadata.
-              </p>
-
-              <!-- <p>
-                Easily find available slots and add events effortlessly. But
-                what is an event, exactly? Its meaning is entirely up to you.
-                With the metadata field, you can define it however you
-                like—whether it’s a doctor’s appointment or team calls for your
-                dev project. The choice is yours.
-              </p> -->
             </div>
           </div>
+        </div>
 
+        <div class="container mt-5 px-0 px-md-3 w-100 w-md-auto">
           <div
-            class="documentation-card rounded-5 d-flex flex-column align-items-center gap-5 p-5 text-white"
+            class="documentation-card rounded-sm-0 rounded-5 d-flex flex-column align-items-center gap-5 p-5 text-white w-100"
             data-aos="zoom-in"
           >
             <div class="text-center">
@@ -286,7 +277,7 @@
               </h1>
 
               <h2
-                class="fw-light fs-5 mt-3 w-50 mx-auto"
+                class="fw-light fs-5 mt-3 w-sm-100 w-lg-50 mx-auto"
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
@@ -307,7 +298,7 @@
             </button>
 
             <div
-              class="d-flex align-items-center justify-content-between w-50 sdk-list"
+              class="d-flex align-items-center flex-md-row flex-column justify-content-between w-sm-100 w-lg-50 sdk-list"
             >
               <a
                 class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
@@ -379,9 +370,9 @@
         </div>
       </section>
 
-      <section id="use-cases" class="my-5">
+      <section id="use-cases" class="my-5 h-100">
         <div class="container">
-          <h1 data-aos="fade-down">
+          <h1 class="text-center text-md-start" data-aos="fade-down">
             <span class="brand-text">Schedly</span> in Action
           </h1>
 
@@ -546,7 +537,7 @@
         </div>
       </section>
 
-      <section id="pricing" class="my-5 p-5">
+      <section id="pricing" class="my-5 p-5 h-100">
         <div class="container">
           <div class="text-center mb-5 text-white">
             <h2 class="fw-bold" data-aos="fade-down">Our Pricing Plans</h2>
@@ -739,10 +730,10 @@
         </div>
       </section>
 
-      <div id="footer-documentation-card-wrapper" class="py-5">
-        <div class="container">
+      <div id="footer-documentation-card-wrapper" class="py-5 h-100">
+        <div class="container mt-5 px-0 px-md-3 w-100 w-md-auto">
           <div
-            class="documentation-card rounded-5 d-flex flex-column align-items-center gap-5 p-5 text-white"
+            class="documentation-card rounded-sm-0 rounded-5 d-flex flex-column align-items-center gap-5 p-5 text-white w-100"
             data-aos="zoom-in"
           >
             <div class="text-center">
@@ -750,8 +741,9 @@
                 Integrate
                 <span class="brand-text text-white">Schedly</span> your way
               </h1>
+
               <h2
-                class="fw-light fs-5 mt-3 w-50 mx-auto"
+                class="fw-light fs-5 mt-3 w-sm-100 w-lg-50 mx-auto"
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
@@ -760,6 +752,7 @@
                 SDKs for multiple platforms.
               </h2>
             </div>
+
             <button
               class="btn btn-lg rounded-pill hvr-bounce-to-right overflow-hidden hvr-icon-pop"
               style="background-color: white"
@@ -769,8 +762,9 @@
               View documentation
               <i class="fa-solid fa-chevron-right hvr-icon"></i>
             </button>
+
             <div
-              class="d-flex align-items-center justify-content-between w-50 sdk-list"
+              class="d-flex align-items-center flex-md-row flex-column justify-content-between w-sm-100 w-lg-50 sdk-list"
             >
               <a
                 class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
@@ -779,8 +773,10 @@
                 data-aos-delay="400"
               >
                 <i class="fa-brands fa-hive fa-3x"></i>
+
                 <p class="mb-0">REST</p>
               </a>
+
               <a
                 href=""
                 class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
@@ -788,8 +784,10 @@
                 data-aos-delay="500"
               >
                 <i class="fa-brands fa-js fa-3x"></i>
+
                 <p class="mb-0">JavaScript</p>
               </a>
+
               <a
                 href=""
                 class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
@@ -797,8 +795,10 @@
                 data-aos-delay="600"
               >
                 <i class="fa-brands fa-java fa-3x"></i>
+
                 <p class="mb-0">Java</p>
               </a>
+
               <a
                 href=""
                 class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
@@ -806,8 +806,10 @@
                 data-aos-delay="700"
               >
                 <i class="fa-brands fa-android fa-3x"></i>
+
                 <p class="mb-0">Android</p>
               </a>
+
               <a
                 href=""
                 class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
@@ -815,8 +817,10 @@
                 data-aos-delay="800"
               >
                 <i class="fa-brands fa-apple fa-3x"></i>
+
                 <p class="mb-0">iOS</p>
               </a>
+
               <a
                 href=""
                 class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
@@ -824,6 +828,7 @@
                 data-aos-delay="850"
               >
                 <i class="fa-brands fa-flutter fa-3x"></i>
+
                 <p class="mb-0">Flutter</p>
               </a>
             </div>

@@ -175,10 +175,11 @@ header nav {
 }
 
 #footer-decoration {
-    height: 100px;
+    height: 30px;
     background-color: #4b91e2;
     background-image: url('assets/img/bubble-side-divider.svg');
     background-position: top;
+    background-repeat: repeat-x;
 }
 
 footer {
@@ -259,4 +260,23 @@ section#use-cases {
 
 #intro-code-example {
     height: calc(100dvh + 74px);
+}
+
+@media (max-width: 576px) {
+    .rounded-sm-0 {
+        border-radius: 0px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .custom-container {
+        max-width: 100%; /* Rimuove il comportamento fluid */
+        padding-left: var(--bs-gutter-x, 1rem);
+        padding-right: var(--bs-gutter-x, 1rem);
+    }
+}
+
+.nav-link.active {
+    --bs-navbar-active-color: #4b91e2;
+    font-weight: bold;
 }

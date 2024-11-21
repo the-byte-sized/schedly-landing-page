@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     cronExpression: "* * * * 0-2",
     type: "blacklist",
     calendarId
-});`, 20, () => {
+});`, 15, () => {
             calendar.addEvent({
                 start: '2024-11-03',
                 display: 'background',
@@ -278,7 +278,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     date: "${date.toISOString()}",
     type: "whitelist",
     calendarId
-});`, 25, () => {
+});`, 10, () => {
             // Rimuovere un evento specifico dopo la creazione
             const event = calendar.getEventById('1'); // Trova l'evento con ID "1"
 
@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         customerName: 'Claudio',
         customerSurname: 'Cortese',
     }
-});`, 15, () => {
+});`, 10, () => {
             // Rimuovere un evento specifico dopo la creazione
             const event = calendar.getEventById('1'); // Trova l'evento con ID "1"
 
