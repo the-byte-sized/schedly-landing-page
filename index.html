@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="overflow-x-hidden">
+<html lang="en" class="overflow-x-hidden mw-100">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -47,9 +47,9 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
 
-  <body>
+  <body class="overflow-x-hidden mw-100">
     <header>
-      <nav class="navbar navbar-expand-lg sticky-top">
+      <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#"> Schedly </a>
 
@@ -71,7 +71,9 @@
           >
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#overview"
+                  >Overview</a
+                >
               </li>
 
               <li class="nav-item">
@@ -79,11 +81,11 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Use cases</a>
+                <a class="nav-link" href="#use-cases">Use cases</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#pricing">Pricing</a>
               </li>
             </ul>
 
@@ -102,7 +104,8 @@
       </nav>
 
       <div
-        class="d-flex flex-column align-items-center justify-content-center h-100"
+        id="intro-code-example"
+        class="d-flex flex-column align-items-center justify-content-center"
       >
         <h1 class="text-center" data-aos="zoom-in" data-aos-delay="300">
           Scheduling Made Simple.
@@ -161,25 +164,34 @@
           <div
             id="calendar"
             data-aos="fade-left"
-            data-aos-delay="1400"
-            data-aos-duration="1000"
+            data-aos-delay="1800"
+            data-aos-duration="1200"
           ></div>
         </div>
       </div>
     </header>
 
     <main>
-      <section id="features" class="pt-5 pb-5 position-relative">
-        <div class="container d-flex flex-column gap-5">
-          <div class="d-flex align-items-stretch justify-content-between gap-3">
-            <div class="feature-card">
-              <div class="d-flex flex-column align-items-center gap-2">
+      <section id="overview" class="pt-5 mb-5 position-relative">
+        <div
+          class="container d-flex flex-column gap-5 h-100 align-items-center justify-content-center mt-5"
+        >
+          <div class="d-flex align-items-stretch justify-content-between gap-3 mt-5">
+            <div
+              class="feature-card rounded-5"
+              data-aos="slide-right"
+              data-aos-anchor="#overview"
+            >
+              <div
+                class="d-flex flex-column align-items-center gap-2"
+                data-aos="fade-down"
+              >
                 <i class="fa-solid fa-shapes fa-2x"></i>
 
                 <h1 class="fs-3">1. Create entities</h1>
               </div>
 
-              <p class="fw-light">
+              <p class="fw-light" data-aos="fade-up" data-aos-delay="200">
                 An entity is a flexible concept. It can represent a calendar, a
                 barbershop, a personal agenda, or even a task list. Its meaning
                 adapts to your needs.
@@ -193,14 +205,18 @@
               </p> -->
             </div>
 
-            <div class="feature-card">
-              <div class="d-flex flex-column align-items-center gap-2">
+            <div class="feature-card rounded-5" data-aos="zoom-in">
+              <div
+                class="d-flex flex-column align-items-center gap-2"
+                data-aos="fade-down"
+                data-aos-delay="100"
+              >
                 <i class="fa-solid fa-filter fa-2x"></i>
 
                 <h1 class="fs-3">2. Add exceptions</h1>
               </div>
 
-              <p class="fw-light">
+              <p class="fw-light" data-aos="fade-up" data-aos-delay="300">
                 Exceptions in Schedly, either blacklist or whitelist, can be
                 one-time or recurring (via cron). Use them for business hours,
                 employee leave, or resource unavailability—fully customizable.
@@ -216,14 +232,18 @@
               </p> -->
             </div>
 
-            <div class="feature-card">
-              <div class="d-flex flex-column align-items-center gap-2">
+            <div class="feature-card rounded-5" data-aos="slide-left">
+              <div
+                class="d-flex flex-column align-items-center gap-2"
+                data-aos="fade-down"
+                data-aos-delay="200"
+              >
                 <i class="fa-solid fa-list-check fa-2x"></i>
 
                 <h1 class="fs-3">3. Schedule events</h1>
               </div>
 
-              <p class="fw-light">
+              <p class="fw-light" data-aos="fade-up" data-aos-delay="400">
                 Easily find slots and add events effortlessly. What’s an event?
                 It’s whatever you need—doctor’s appointment, team call, or more,
                 customizable via metadata.
@@ -240,16 +260,20 @@
           </div>
 
           <div
-            id="documentation-card"
-            class="d-flex flex-column align-items-center gap-5 p-5 text-white"
+            class="documentation-card rounded-5 d-flex flex-column align-items-center gap-5 p-5 text-white"
+            data-aos="zoom-in"
           >
             <div class="text-center">
-              <h1>
+              <h1 data-aos="fade-down">
                 Integrate
                 <span class="brand-text text-white">Schedly</span> your way
               </h1>
 
-              <h2 class="fw-light fs-5 mt-3 w-50 mx-auto">
+              <h2
+                class="fw-light fs-5 mt-3 w-50 mx-auto"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 Schedly adapts to your workflow with ease. Use our robust API
                 for direct integration or speed up development with ready-to-go
                 SDKs for multiple platforms.
@@ -259,60 +283,525 @@
             <button
               class="btn btn-lg rounded-pill hvr-bounce-to-right overflow-hidden hvr-icon-pop"
               style="background-color: white"
+              data-aos="zoom-in"
+              data-aos-delay="300"
             >
               View documentation
               <i class="fa-solid fa-chevron-right hvr-icon"></i>
             </button>
 
-            <div class="d-flex align-items-center justify-content-between w-50">
-              <a class="p-3 hvr-fade text-white text-decoration-none" href="">
-                <div class="d-flex flex-column align-items-center gap-3">
-                  <i class="fa-brands fa-hive fa-3x"></i>
+            <div
+              class="d-flex align-items-center justify-content-between w-50 sdk-list"
+            >
+              <a
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                href=""
+                data-aos="zoom-in-right"
+                data-aos-delay="400"
+              >
+                <i class="fa-brands fa-hive fa-3x"></i>
 
-                  <p>REST</p>
-                </div>
+                <p class="mb-0">REST</p>
               </a>
 
-              <a href="" class="p-3 hvr-fade text-white text-decoration-none">
-                <div class="d-flex flex-column align-items-center gap-3">
-                  <i class="fa-brands fa-js fa-3x"></i>
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+              >
+                <i class="fa-brands fa-js fa-3x"></i>
 
-                  <p>JavaScript</p>
-                </div>
+                <p class="mb-0">JavaScript</p>
               </a>
 
-              <a href="" class="p-3 hvr-fade text-white text-decoration-none">
-                <div class="d-flex flex-column align-items-center gap-3">
-                  <i class="fa-brands fa-java fa-3x"></i>
-                  <p>Java</p>
-                </div></a
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="600"
               >
+                <i class="fa-brands fa-java fa-3x"></i>
 
-              <a href="" class="p-3 hvr-fade text-white text-decoration-none"
-                ><div class="d-flex flex-column align-items-center gap-3">
-                  <i class="fa-brands fa-android fa-3x"></i>
-                  <p>Android</p>
-                </div></a
-              >
+                <p class="mb-0">Java</p>
+              </a>
 
-              <a href="" class="p-3 hvr-fade text-white text-decoration-none"
-                ><div class="d-flex flex-column align-items-center gap-3">
-                  <i class="fa-brands fa-apple fa-3x"></i>
-                  <p>iOS</p>
-                </div></a
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="700"
               >
+                <i class="fa-brands fa-android fa-3x"></i>
 
-              <a href="" class="p-3 hvr-fade text-white text-decoration-none"
-                ><div class="d-flex flex-column align-items-center gap-3">
-                  <i class="fa-brands fa-flutter fa-3x"></i>
-                  <p>Flutter</p>
-                </div></a
+                <p class="mb-0">Android</p>
+              </a>
+
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="800"
               >
+                <i class="fa-brands fa-apple fa-3x"></i>
+
+                <p class="mb-0">iOS</p>
+              </a>
+
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in-left"
+                data-aos-delay="850"
+              >
+                <i class="fa-brands fa-flutter fa-3x"></i>
+
+                <p class="mb-0">Flutter</p>
+              </a>
             </div>
           </div>
         </div>
       </section>
+
+      <section id="use-cases" class="my-5">
+        <div class="container">
+          <h1 data-aos="fade-down">
+            <span class="brand-text">Schedly</span> in Action
+          </h1>
+
+          <h2 class="fw-light" data-aos="fade-up" data-aos-delay="200">
+            Imagine how Schedly's innovative, tech-forward scheduling solutions
+            can transform your business. Explore our use cases to see how we can
+            revolutionize time management and streamline your workflows.
+          </h2>
+        </div>
+
+        <div class="container my-5">
+          <div class="row row row-gap-5">
+            <div class="col-sm-12 col-md-8">
+              <a href="">
+                <div
+                  id="healthcare-use-case"
+                  class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+                  data-aos="slide-right"
+                >
+                  <div
+                    class="card-title d-flex flex-column align-items-center gap-2"
+                  >
+                    <i class="fa-solid fa-stethoscope fa-2x fa-fw"></i>
+
+                    <h1 class="fs-3">Healthcare</h1>
+                  </div>
+
+                  <p class="fw-light">
+                    An entity is a flexible concept. It can represent a
+                    calendar, a barbershop, a personal agenda, or even a task
+                    list. Its meaning adapts to your needs.
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-sm-12 col-md-4">
+              <a href="">
+                <div
+                  id="education-use-case"
+                  class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+                  data-aos="slide-left"
+                >
+                  <div
+                    class="card-title d-flex flex-column align-items-center gap-2"
+                  >
+                    <i class="fa-solid fa-graduation-cap fa-2x fa-fw"></i>
+
+                    <h1 class="fs-3">Education</h1>
+                  </div>
+
+                  <p class="fw-light">
+                    An entity is a flexible concept. It can represent a
+                    calendar, a barbershop, a personal agenda, or even a task
+                    list. Its meaning adapts to your needs.
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-xl-5">
+              <a href="">
+                <div
+                  id="coworking-use-case"
+                  class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+                  data-aos="slide-right"
+                >
+                  <div
+                    class="card-title d-flex flex-column align-items-center gap-2"
+                  >
+                    <i class="fa-solid fa-graduation-cap fa-2x fa-fw"></i>
+
+                    <h1 class="fs-3">Coworking Space management</h1>
+                  </div>
+
+                  <p class="fw-light">
+                    An entity is a flexible concept. It can represent a
+                    calendar, a barbershop, a personal agenda, or even a task
+                    list. Its meaning adapts to your needs.
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-xl-7">
+              <a href="">
+                <div
+                  id="ride-sharing-use-case"
+                  class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+                  data-aos="slide-left"
+                >
+                  <div
+                    class="card-title d-flex flex-column align-items-center gap-2"
+                  >
+                    <i class="fa-solid fa-car fa-2x fa-fw"></i>
+
+                    <h1 class="fs-3">Ride Sharing service</h1>
+                  </div>
+
+                  <p class="fw-light">
+                    An entity is a flexible concept. It can represent a
+                    calendar, a barbershop, a personal agenda, or even a task
+                    list. Its meaning adapts to your needs.
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-sm-12 col-md-4">
+              <a href="">
+                <div
+                  id="beauty-saloon-use-case"
+                  class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+                  data-aos="zoom-in"
+                >
+                  <div
+                    class="card-title d-flex flex-column align-items-center gap-2"
+                  >
+                    <i class="fa-solid fa-spa fa-2x fa-fw"></i>
+
+                    <h1 class="fs-3">Beauty Saloon</h1>
+                  </div>
+
+                  <p class="fw-light">
+                    An entity is a flexible concept. It can represent a
+                    calendar, a barbershop, a personal agenda, or even a task
+                    list. Its meaning adapts to your needs.
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-sm-12 col-md-8">
+              <a href="">
+                <div
+                  id="next-use-case"
+                  class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+                  data-aos="zoom-in"
+                >
+                  <div
+                    class="card-title d-flex flex-column align-items-center gap-2"
+                  >
+                    <i class="fa-solid fa-question fa-2x fa-fw"></i>
+
+                    <h1 class="fs-3">Your Business Could Be Next</h1>
+                  </div>
+
+                  <button
+                    class="btn btn-lg rounded-pill hvr-bounce-to-right overflow-hidden hvr-icon-pop aos-init aos-animate mt-3"
+                    style="background-color: white"
+                    data-aos="zoom-in"
+                    data-aos-delay="300"
+                  >
+                    Get started today
+
+                    <i class="fa-solid fa-chevron-right hvr-icon"></i>
+                  </button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="my-5 p-5">
+        <div class="container">
+          <div class="text-center mb-5 text-white">
+            <h2 class="fw-bold" data-aos="fade-down">Our Pricing Plans</h2>
+
+            <p
+              class="text-muted fw-light"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              Choose the plan that fits your needs.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Free Plan -->
+            <div class="col-md-4">
+              <div
+                id="free-plan-card"
+                class="card border-0 rounded-4 shadow-sm hvr-icon-float"
+                data-aos="zoom-in-right"
+              >
+                <div class="card-body text-center">
+                  <div data-aos="fade-down" data-aos-delay="200">
+                    <i class="fa-solid fa-rocket fa-3x hvr-icon" style="color: #50e2c3"></i>
+
+                    <h5 class="card-title mt-2 fw-bold">Starter Plan</h5>
+
+                    <p class="card-text text-muted fw-light">
+                      Perfect for getting started.
+                    </p>
+                  </div>
+
+                  <h3 class="fw-bold mt-3" data-aos="fade-up" data-aos-delay="300">Free forever</h3>
+
+                  <ul
+                    class="list-unstyled my-4"
+                    style="margin: 0 auto; max-width: 300px"
+                    data-aos="fade-in"
+                    data-aos-delay="400"
+                  >
+                    <li class="d-flex align-items-center mb-2">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      <span>Basic features</span>
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <i class="fas fa-times-circle text-danger me-2"></i>
+                      <span>Limited support</span>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <i class="fas fa-times-circle text-danger me-2"></i>
+                      <span>No custom integrations</span>
+                    </li>
+                  </ul>
+
+                  <a
+                    href="#"
+                    class="btn btn-outline-primary w-100"
+                    data-aos="zoom-in"
+                    data-aos-delay="400"
+                    >Get Started</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="col-md-4">
+              <div
+                id="premium-plan-card"
+                class="card border-0 rounded-4 shadow hvr-icon-float"
+                data-aos="zoom-in"
+              >
+                <div class="card-body text-center">
+                  <i class="fa-solid fa-meteor fa-3x hvr-icon" style="color: #cf021a;"></i>
+
+                  <h5 class="card-title mt-2 fw-bold">Premium Plan</h5>
+
+                  <p class="card-text text-muted fw-light">
+                    Great for scaling your needs.
+                  </p>
+
+                  <h3 class="fw-bold">
+                    <span id="monthlyPrice" class="pricing-amount">€15</span>
+                    <small id="billingCycle" class="pricing-cycle">/mo</small>
+                  </h3>
+
+                  <div
+                    class="d-flex justify-content-center align-items-center my-3"
+                  >
+                    <span class="me-2">Monthly</span>
+                    <div class="form-check form-switch">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="billingToggle"
+                      />
+                      <label class="form-check-label" for="billingToggle"
+                        >Yearly</label
+                      >
+                    </div>
+                    <span class="ms-2 text-success">Save 20%!</span>
+                  </div>
+
+                  <ul
+                    class="list-unstyled my-4"
+                    style="margin: 0 auto; max-width: 300px"
+                  >
+                    <li class="d-flex align-items-center mb-2">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      <span>All basic features</span>
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      <span>Priority support</span>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      <span>Custom integrations</span>
+                    </li>
+                  </ul>
+
+                  <a href="#" class="btn btn-primary w-100" data-aos="zoom-in"
+                    >Choose Plan</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Custom Plan -->
+            <div class="col-md-4">
+              <div
+                id="custom-plan-card"
+                class="card border-0 rounded-4 shadow-sm hvr-icon-float"
+                data-aos="zoom-in-left"
+              >
+                <div class="card-body text-center">
+                  <i class="fa-solid fa-paintbrush fa-3x hvr-icon" style="color: #f5a524;"></i>
+
+                  <h5 class="card-title mt-2 fw-bold">Custom Plan</h5>
+
+                  <p class="card-text text-muted fw-light">
+                    Tailored for your business.
+                  </p>
+
+                  <h3 class="fw-bold">Custom Pricing</h3>
+
+                  <ul
+                    class="list-unstyled my-4"
+                    style="margin: 0 auto; max-width: 300px"
+                  >
+                    <li class="d-flex align-items-center mb-2">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      <span>All premium features</span>
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      <span>Dedicated support</span>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      <span>Custom integrations</span>
+                    </li>
+                  </ul>
+
+                  <a
+                    href="#"
+                    class="btn btn-outline-dark w-100"
+                    data-aos="zoom-in"
+                    >Contact Us</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="footer-documentation-card-wrapper" class="py-5">
+        <div class="container">
+          <div
+            class="documentation-card rounded-5 d-flex flex-column align-items-center gap-5 p-5 text-white"
+            data-aos="zoom-in"
+          >
+            <div class="text-center">
+              <h1 data-aos="fade-down">
+                Integrate
+                <span class="brand-text text-white">Schedly</span> your way
+              </h1>
+              <h2
+                class="fw-light fs-5 mt-3 w-50 mx-auto"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                Schedly adapts to your workflow with ease. Use our robust API
+                for direct integration or speed up development with ready-to-go
+                SDKs for multiple platforms.
+              </h2>
+            </div>
+            <button
+              class="btn btn-lg rounded-pill hvr-bounce-to-right overflow-hidden hvr-icon-pop"
+              style="background-color: white"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              View documentation
+              <i class="fa-solid fa-chevron-right hvr-icon"></i>
+            </button>
+            <div
+              class="d-flex align-items-center justify-content-between w-50 sdk-list"
+            >
+              <a
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                href=""
+                data-aos="zoom-in-right"
+                data-aos-delay="400"
+              >
+                <i class="fa-brands fa-hive fa-3x"></i>
+                <p class="mb-0">REST</p>
+              </a>
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+              >
+                <i class="fa-brands fa-js fa-3x"></i>
+                <p class="mb-0">JavaScript</p>
+              </a>
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="600"
+              >
+                <i class="fa-brands fa-java fa-3x"></i>
+                <p class="mb-0">Java</p>
+              </a>
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="700"
+              >
+                <i class="fa-brands fa-android fa-3x"></i>
+                <p class="mb-0">Android</p>
+              </a>
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="800"
+              >
+                <i class="fa-brands fa-apple fa-3x"></i>
+                <p class="mb-0">iOS</p>
+              </a>
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in-left"
+                data-aos-delay="850"
+              >
+                <i class="fa-brands fa-flutter fa-3x"></i>
+                <p class="mb-0">Flutter</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+
+    <div id="footer-decoration"></div>
 
     <footer class="p-4 text-white">
       <div class="container">
@@ -322,19 +811,25 @@
               <li class="fw-bold">Use Cases</li>
 
               <li>
-                <a href="#" class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
                   >Lorem, ipsum.</a
                 >
               </li>
 
               <li>
-                <a href="#" class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
                   >Lorem ipsum dolor sit amet.</a
                 >
               </li>
 
               <li>
-                <a href="#" class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
                   >Lorem, ipsum dolor.</a
                 >
               </li>
@@ -345,17 +840,23 @@
             <ul class="list-inline">
               <li class="fw-bold">For developers</li>
               <li>
-                <a href="#" class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
                   >Documentation</a
                 >
               </li>
               <li>
-                <a href="#" class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
                   >API Reference</a
                 >
               </li>
               <li>
-                <a href="#" class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
                   >Changelog</a
                 >
               </li>
@@ -366,22 +867,30 @@
             <ul class="list-inline">
               <li class="fw-bold">Product</li>
               <li>
-                <a href="#" class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
                   >Why Schedly</a
                 >
               </li>
               <li>
-                <a href="#" class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
                   >Features</a
                 >
               </li>
               <li>
-                <a href="#" class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
                   >Pricing</a
                 >
               </li>
               <li>
-                <a href="#" class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
                   >Terms & Conditions</a
                 >
               </li>
@@ -392,22 +901,30 @@
             <ul class="list-inline">
               <li class="fw-bold">Company</li>
               <li>
-                <a href="#" class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
                   >About us</a
                 >
               </li>
               <li>
-                <a href="#" class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
                   >Contact</a
                 >
               </li>
               <li>
-                <a href="#" class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
                   >Privacy</a
                 >
               </li>
               <li>
-                <a href="#" class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
                   >Terms & Conditions</a
                 >
               </li>
