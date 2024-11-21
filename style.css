@@ -280,3 +280,16 @@ section#use-cases {
     --bs-navbar-active-color: #4b91e2;
     font-weight: bold;
 }
+
+#intro-healthcare {
+    background: linear-gradient(to bottom, #50e2c3, #4b91e2);
+    padding: 100px 0;
+    color: white;
+}
+
+.feature-card {
+    background: #4b91e2;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+}
