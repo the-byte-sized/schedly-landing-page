@@ -1,89 +1,168 @@
 <!DOCTYPE html>
 <html lang="en" class="overflow-x-hidden mw-100">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Schedly for Healthcare - Revolutionizing Medical Scheduling</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Hover.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- AOS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css" integrity="sha512-hoGlO+71fSG6lgS60I4bKvsFVB+bAnrVFDYlwSXoyNLppDcoupwJB7KbWq/63iACKn3gcgK9jMXd+T+YDeVrGQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css"
+      integrity="sha512-hoGlO+71fSG6lgS60I4bKvsFVB+bAnrVFDYlwSXoyNLppDcoupwJB7KbWq/63iACKn3gcgK9jMXd+T+YDeVrGQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/style.css">
-</head>
-<body class="overflow-x-hidden mw-100">
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-TD0DJ68RLE"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
+    gtag("config", "G-TD0DJ68RLE");
+  </script>
+  <body class="overflow-x-hidden mw-100">
     <header>
-        <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">Schedly</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link fs-5" href="#overview">Overview</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-                    </ul>
-                    <div class="d-none d-lg-flex gap-3 align-items-center">
-                        <button class="btn btn-lg rounded-pill text-white">Get Started</button>
-                    </div>
-                </div>
+      <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Schedly</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="#overview">Overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+            </ul>
+            <div class="d-none d-lg-flex gap-3 align-items-center">
+              <button class="btn btn-lg rounded-pill text-white">
+                Get Started
+              </button>
             </div>
-        </nav>
-        <div id="intro-healthcare" class="d-flex flex-column align-items-center justify-content-center text-center text-white">
-            <h1>Optimized Scheduling for Healthcare Professionals</h1>
-            <p class="fw-light">Effortlessly coordinate appointments, manage staff schedules, and improve patient care.</p>
-            <div class="d-flex gap-3">
-                <button type="button" class="btn btn-primary">Explore Solutions</button>
-                <button type="button" class="btn btn-outline-light">Learn More</button>
-            </div>
+          </div>
         </div>
+      </nav>
+      <div
+        id="intro-healthcare"
+        class="d-flex flex-column align-items-center justify-content-center text-center text-white"
+      >
+        <h1>Optimized Scheduling for Healthcare Professionals</h1>
+        <p class="fw-light">
+          Effortlessly coordinate appointments, manage staff schedules, and
+          improve patient care.
+        </p>
+        <div class="d-flex gap-3">
+          <button type="button" class="btn btn-primary">
+            Explore Solutions
+          </button>
+          <button type="button" class="btn btn-outline-light">
+            Learn More
+          </button>
+        </div>
+      </div>
     </header>
 
     <main>
-        <section id="overview" class="py-5">
-            <div class="container text-center">
-                <h2 class="fw-bold">Why Schedly for Healthcare?</h2>
-                <p class="fw-light">Built for the demands of busy healthcare environments, Schedly empowers professionals to focus on what matters most: patient care.</p>
+      <section id="overview" class="py-5">
+        <div class="container text-center">
+          <h2 class="fw-bold">Why Schedly for Healthcare?</h2>
+          <p class="fw-light">
+            Built for the demands of busy healthcare environments, Schedly
+            empowers professionals to focus on what matters most: patient care.
+          </p>
 
-                <div class="mt-5">
-                    <h3 class="fw-bold">Use Case: Appointment Scheduling for a Multi-Specialty Clinic</h3>
-                    <p class="fw-light">A bustling multi-specialty clinic offers services ranging from general practice to specialized treatments. Managing appointments for numerous doctors with varying schedules, handling last-minute cancellations, and accommodating emergency visits present significant challenges.</p>
-                </div>
+          <div class="mt-5">
+            <h3 class="fw-bold">
+              Use Case: Appointment Scheduling for a Multi-Specialty Clinic
+            </h3>
+            <p class="fw-light">
+              A bustling multi-specialty clinic offers services ranging from
+              general practice to specialized treatments. Managing appointments
+              for numerous doctors with varying schedules, handling last-minute
+              cancellations, and accommodating emergency visits present
+              significant challenges.
+            </p>
+          </div>
 
-                <div class="mt-4">
-                    <h3 class="fw-bold">How Schedly Helps</h3>
-                    <ul class="list-unstyled text-start mx-auto" style="max-width: 800px;">
-                        <li class="mb-3">
-                            <i class="fa-solid fa-check text-primary"></i>
-                            <strong>Advanced Availability Management:</strong> Set up individual schedules for each doctor, including specific working hours, days off, and vacation periods.
-                        </li>
-                        <li class="mb-3">
-                            <i class="fa-solid fa-check text-primary"></i>
-                            <strong>Exception Handling:</strong> Easily block out time slots for emergencies, conferences, or personal commitments using the blacklist feature.
-                        </li>
-                        <li class="mb-3">
-                            <i class="fa-solid fa-check text-primary"></i>
-                            <strong>Recurring Appointments:</strong> Schedule regular check-ups or treatments with recurring rules, ensuring consistency for patients needing ongoing care.
-                        </li>
-                        <li class="mb-3">
-                            <i class="fa-solid fa-check text-primary"></i>
-                            <strong>Real-Time Updates:</strong> Provide instant updates to patients about appointment availability, reducing wait times and enhancing patient satisfaction.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+          <div class="mt-4">
+            <h3 class="fw-bold">How Schedly Helps</h3>
+            <ul
+              class="list-unstyled text-start mx-auto"
+              style="max-width: 800px"
+            >
+              <li class="mb-3">
+                <i class="fa-solid fa-check text-primary"></i>
+                <strong>Advanced Availability Management:</strong> Set up
+                individual schedules for each doctor, including specific working
+                hours, days off, and vacation periods.
+              </li>
+              <li class="mb-3">
+                <i class="fa-solid fa-check text-primary"></i>
+                <strong>Exception Handling:</strong> Easily block out time slots
+                for emergencies, conferences, or personal commitments using the
+                blacklist feature.
+              </li>
+              <li class="mb-3">
+                <i class="fa-solid fa-check text-primary"></i>
+                <strong>Recurring Appointments:</strong> Schedule regular
+                check-ups or treatments with recurring rules, ensuring
+                consistency for patients needing ongoing care.
+              </li>
+              <li class="mb-3">
+                <i class="fa-solid fa-check text-primary"></i>
+                <strong>Real-Time Updates:</strong> Provide instant updates to
+                patients about appointment availability, reducing wait times and
+                enhancing patient satisfaction.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer Decoration -->
@@ -92,157 +171,187 @@
     <!-- Footer -->
 
     <footer class="p-4 text-white">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <ul class="list-inline">
-                <li class="fw-bold">Use Cases</li>
-  
-                <li>
-                  <a
-                    href="/use-cases/healthcare.html"
-                    class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    >Healthcare</a
-                  >
-                </li>
-  
-                <li>
-                  <a
-                    href="/use-cases/education.html"
-                    class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    >Education</a
-                  >
-                </li>
-  
-                <li>
-                  <a
-                    href="/use-cases/coworking-space-management.html"
-                    class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    >Co-working Space Management</a
-                  >
-                </li>
-  
-                <li>
-                  <a
-                    href="/use-cases/ride-sharing.html"
-                    class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    >Ride Sharing Service</a
-                  >
-                </li>
-  
-                <li>
-                  <a
-                    href="/use-cases/beauty-saloon.html"
-                    class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    >Beauty Saloon</a
-                  >
-                </li>
-              </ul>
-            </div>
-  
-            <div class="col-md-3">
-              <ul class="list-inline">
-                <li class="fw-bold">For developers</li>
-                <li>
-                  <a
-                    href="#"
-                    class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    >Documentation</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    >API Reference</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    >Changelog</a
-                  >
-                </li>
-              </ul>
-            </div>
-  
-            <div class="col-md-3">
-              <ul class="list-inline">
-                <li class="fw-bold">Product</li>
-                <li>
-                  <a
-                    href="#"
-                    class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    >Why Schedly</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    >Features</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    >Pricing</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    >Terms & Conditions</a
-                  >
-                </li>
-              </ul>
-            </div>
-  
-            <div class="col-md-3">
-              <ul class="list-inline">
-                <li class="fw-bold">Company</li>
-                <li>
-                  <a
-                    href="#"
-                    class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    >About us</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    >Contact</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    >Privacy</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    >Terms & Conditions</a
-                  >
-                </li>
-              </ul>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <ul class="list-inline">
+              <li class="fw-bold">Use Cases</li>
+
+              <li>
+                <a
+                  href="/use-cases/healthcare.html"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Healthcare</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="/use-cases/education.html"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Education</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="/use-cases/coworking-space-management.html"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Co-working Space Management</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="/use-cases/ride-sharing.html"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Ride Sharing Service</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="/use-cases/beauty-salon.html"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Beauty Salon</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <ul class="list-inline">
+              <li class="fw-bold">For developers</li>
+              <li>
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Documentation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >API Reference</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Changelog</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <ul class="list-inline">
+              <li class="fw-bold">Product</li>
+              <li>
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Why Schedly</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <ul class="list-inline">
+              <li class="fw-bold">Company</li>
+              <li>
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Privacy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
-  
-        <hr />
-      </footer>
+      </div>
+
+      <hr />
+    </footer>
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"
+    integrity="sha512-tnNM6PPNOVfZ5sGPw6hThCrcUBeqt2mVEk3EAj8tCtuMHqbuVm5/HsZagrr8W2aaFE+6rKIByGwQbEnmodrYVg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+    integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/monaco-editor/min/vs/loader.js"></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/index.global.min.js"
+    integrity="sha512-PneTXNl1XRcU6n5B1PGTDe3rBXY04Ht+Eddn/NESwvyc+uV903kiyuXCWgL/OfSUgnr8HLSGqotxe6L8/fOvwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script src="/index.js"></script>
 </html>

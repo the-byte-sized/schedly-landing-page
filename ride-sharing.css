@@ -1,0 +1,20 @@
+.brand-cta {
+    background-color: #50e2c3;
+    border: none;
+}
+
+.brand-cta:hover {
+    background-color: #3cbfa5;
+}
+
+#intro-ride-sharing {
+    background-image: url('/path/to/your/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#cta {
+    background-color: #50e2c3;
+    color: white;
+}

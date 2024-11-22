@@ -281,7 +281,8 @@ section#use-cases {
     font-weight: bold;
 }
 
-#intro-healthcare {
+#intro-healthcare,
+#intro-ride-sharing {
     background: linear-gradient(to bottom, #50e2c3, #4b91e2);
     padding: 100px 0;
     color: white;
