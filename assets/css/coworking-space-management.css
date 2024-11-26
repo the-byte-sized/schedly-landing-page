@@ -1,0 +1,22 @@
+section#overview {
+    padding-top: 150px;
+    background-image: url('/assets/img/coworking-header-background.svg');
+    background-position: top;
+}
+
+#intro-coworking {
+    height: 45dvh;
+    background-color: rebeccapurple;
+    padding-top: calc(74px);
+}
+
+#intro-coworking svg {
+    border: 3px dashed white;
+    border-radius: 20px;
+    padding: 16px;
+}
+
+.feature-card {
+    background-color: rebeccapurple;
+    --hvr-ripple-out-border-color: rebeccapurple;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden mw-100">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,29 +39,49 @@
       crossorigin="anonymous"
     />
 
+    <link rel="stylesheet" href="/assets/css/prism.css" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/index.css" />
+    <link rel="stylesheet" href="/assets/css/coworking-space-management.css" />
+
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "p44hql8nbg");
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K4QNB500PM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-K4QNB500PM");
+    </script>
   </head>
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-TD0DJ68RLE"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
 
-    gtag("config", "G-TD0DJ68RLE");
-  </script>
-
-  <body class="coworking-space-management-page">
+  <body class="overflow-x-hidden mw-100 line-numbers">
     <header>
       <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">Schedly</a>
+          <a class="navbar-brand" href="/">Schedly</a>
+
           <button
             class="navbar-toggler"
             type="button"
@@ -73,6 +93,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
@@ -90,82 +111,288 @@
           </div>
         </div>
       </nav>
+
       <div
         id="intro-coworking"
-        class="d-flex flex-column align-items-center justify-content-center text-center text-white"
+        class="container d-flex align-items-center justify-content-center text-white mw-100"
       >
-        <h1>Efficient Scheduling for Co-working Spaces</h1>
-        <p class="fw-light">
-          Simplify desk, room, and resource bookings for a seamless workspace
-          experience.
-        </p>
-        <div class="d-flex gap-3">
-          <button type="button" class="btn btn-primary">
-            Explore Solutions
-          </button>
-          <button type="button" class="btn btn-outline-light">
-            Learn More
-          </button>
+        <div class="d-flex flex-column align-items-center gap-2">
+          <div
+            class="d-flex flex-column align-items-center gap-2"
+            data-aos="slide-down"
+          >
+            <i
+              class="fa-solid fa-people-roof fa-5x fa-fw"
+              data-aos="zoom-in"
+            ></i>
+
+            <h1 class="fs-3">Conference Room Booking for a Co-Working Space</h1>
+          </div>
+
+          <div class="w-50" data-aos="slide-up">
+            <p class="fw-light">
+              A co-working space provides members with the ability to book
+              conference rooms and shared facilities.
+            </p>
+
+            <p class="fw-light">
+              They need to manage bookings across multiple locations, handle
+              different membership levels, and prevent scheduling conflicts.
+            </p>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
-      <section id="overview" class="py-5">
-        <div class="container text-center">
-          <h2 class="fw-bold">Why Schedly for Co-working Spaces?</h2>
-          <p class="fw-light">
-            Built for the fast-paced needs of co-working environments, Schedly
-            ensures effortless management of shared workspaces.
-          </p>
-
-          <!-- Use Case Section -->
-          <div class="mt-5">
-            <h3 class="fw-bold">
-              Use Case: Conference Room Booking for a Co-Working Space
-            </h3>
-            <p class="fw-light">
-              A co-working space provides members with the ability to book
-              conference rooms and shared facilities. They need to manage
-              bookings across multiple locations, handle different membership
-              levels, and prevent scheduling conflicts.
-            </p>
-          </div>
-
-          <!-- How Schedly Helps Section -->
+      <section id="overview">
+        <div class="container">
           <div class="mt-4">
-            <h3 class="fw-bold">How Schedly Helps</h3>
-            <ul
-              class="list-unstyled text-start mx-auto"
-              style="max-width: 800px"
-            >
-              <li class="mb-3">
-                <i class="fa-solid fa-check text-primary"></i>
-                <strong>Real-Time Availability:</strong> Provide up-to-date
-                booking options to members based on their membership level.
-              </li>
-              <li class="mb-3">
-                <i class="fa-solid fa-check text-primary"></i>
-                <strong>Conflict Prevention:</strong> Automatically prevent
-                double bookings of rooms and resources.
-              </li>
-              <li class="mb-3">
-                <i class="fa-solid fa-check text-primary"></i>
-                <strong>Multi-Location Support:</strong> Manage scheduling
-                across various locations within a single system.
-              </li>
-              <li class="mb-3">
-                <i class="fa-solid fa-check text-primary"></i>
-                <strong>Custom Rules and Permissions:</strong> Set booking
-                limits and access rights for different user tiers.
-              </li>
-            </ul>
+            <div class="container my-5">
+              <div class="row row row-gap-5">
+                <div class="col-sm-12 col-md-6">
+                  <a href="/use-cases/healthcare.html">
+                    <div
+                      class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+                      data-aos="slide-right"
+                    >
+                      <div
+                        class="card-title d-flex flex-column align-items-center gap-2"
+                      >
+                        <i class="fa-solid fa-clock fa-2x fa-fw"></i>
+
+                        <h1 class="fs-3">Real-Time Availability</h1>
+                      </div>
+
+                      <p class="fw-light">
+                        Provide up-to-date booking options to members based on their membership level.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <a href="/use-cases/healthcare.html">
+                    <div
+                      class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+                      data-aos="slide-left"
+                    >
+                      <div
+                        class="card-title d-flex flex-column align-items-center gap-2"
+                      >
+                        <i class="fa-solid fa-calendar-check fa-2x fa-fw"></i>
+
+                        <h1 class="fs-3">Conflict Prevention</h1>
+                      </div>
+
+                      <p class="fw-light">
+                        Automatically prevent double bookings of rooms and resources.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <a href="/use-cases/healthcare.html">
+                    <div
+                      class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+                      data-aos="slide-right"
+                    >
+                      <div
+                        class="card-title d-flex flex-column align-items-center gap-2"
+                      >
+                        <i class="fa-solid fa-building fa-2x fa-fw"></i>
+
+                        <h1 class="fs-3">Multi-Location Support</h1>
+                      </div>
+
+                      <p class="fw-light">
+                        Manage scheduling across various locations within a single system.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <a href="/use-cases/healthcare.html">
+                    <div
+                      class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+                      data-aos="slide-left"
+                    >
+                      <div
+                        class="card-title d-flex flex-column align-items-center gap-2"
+                      >
+                        <i class="fa-solid fa-user-shield fa-2x fa-fw"></i>
+
+                        <h1 class="fs-3">Custom Rules and Permissions</h1>
+                      </div>
+
+                      <p class="fw-light">
+                        Set booking limits and access rights for different user tiers.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- <pre>
+            <code class="language-typescript" data-plugin-header="show-language">
+              const {entityId} = await schedly.createEntity();
+              await schedly.addEvent({
+                entityId,
+                startDate: "today"
+              })
+            </code>
+          </pre> -->
         </div>
       </section>
+
+      <div class="container">
+        <a href="">
+          <div
+            id="next-use-case"
+            class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+            data-aos="zoom-in"
+          >
+            <div class="card-title d-flex flex-column align-items-center gap-2">
+              <i class="fa-solid fa-lightbulb fa-2x fa-fw"></i>
+
+              <h1 class="fs-3">Your Business Could Be Next</h1>
+              <p class="fw-light">
+                Imagine the transformation Schedly can bring to your business.
+                Join the companies that have revolutionized their scheduling
+                with our innovative solutions.
+              </p>
+              <p class="fw-light">Ready to take the next step?</p>
+            </div>
+
+            <button
+              class="btn btn-lg rounded-pill hvr-bounce-to-right overflow-hidden hvr-icon-pop aos-init aos-animate mt-3"
+              style="background-color: white"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              Get started today
+              <i class="fa-solid fa-chevron-right hvr-icon"></i>
+            </button>
+          </div>
+        </a>
+      </div>
+
+      <div id="footer-documentation-card-wrapper" class="pb-5 h-100">
+        <div class="container mt-5 px-0 px-md-3 w-100 w-md-auto">
+          <div
+            class="documentation-card rounded-sm-0 rounded-5 d-flex flex-column align-items-center gap-5 p-5 text-white w-100"
+            data-aos="zoom-in"
+          >
+            <div class="text-center">
+              <h1 data-aos="fade-down">
+                Integrate
+                <span class="brand-text text-white">Schedly</span> your way
+              </h1>
+
+              <h2
+                class="fw-light fs-5 mt-3 w-sm-100 w-lg-50 mx-auto"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                Schedly adapts to your workflow with ease. Use our robust API
+                for direct integration or speed up development with ready-to-go
+                SDKs for multiple platforms.
+              </h2>
+            </div>
+
+            <button
+              class="btn btn-lg rounded-pill hvr-bounce-to-right overflow-hidden hvr-icon-pop"
+              style="background-color: white"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              View documentation
+              <i class="fa-solid fa-chevron-right hvr-icon"></i>
+            </button>
+
+            <div
+              class="d-flex align-items-center flex-md-row flex-column justify-content-between w-sm-100 w-lg-50 sdk-list"
+            >
+              <a
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                href=""
+                data-aos="zoom-in-right"
+                data-aos-delay="400"
+              >
+                <i class="fa-brands fa-hive fa-3x"></i>
+
+                <p class="mb-0">REST</p>
+              </a>
+
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+              >
+                <i class="fa-brands fa-js fa-3x"></i>
+
+                <p class="mb-0">JavaScript</p>
+              </a>
+
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="600"
+              >
+                <i class="fa-brands fa-java fa-3x"></i>
+
+                <p class="mb-0">Java</p>
+              </a>
+
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="700"
+              >
+                <i class="fa-brands fa-android fa-3x"></i>
+
+                <p class="mb-0">Android</p>
+              </a>
+
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="800"
+              >
+                <i class="fa-brands fa-apple fa-3x"></i>
+
+                <p class="mb-0">iOS</p>
+              </a>
+
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in-left"
+                data-aos-delay="850"
+              >
+                <i class="fa-brands fa-flutter fa-3x"></i>
+
+                <p class="mb-0">Flutter</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
+    <!-- Footer Decoration -->
     <div id="footer-decoration"></div>
+
+    <!-- Footer -->
+
     <footer class="p-4 text-white">
       <div class="container">
         <div class="row">
@@ -314,6 +541,11 @@
 
       <hr />
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 
   <script
@@ -345,5 +577,6 @@
     referrerpolicy="no-referrer"
   ></script>
 
-  <script src="/index.js"></script>
+  <script src="/assets/js/prism.js"></script>
+  <script src="/assets/js/coworking-space-management.js"></script>
 </html>

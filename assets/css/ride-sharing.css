@@ -18,3 +18,26 @@
     background-color: #50e2c3;
     color: white;
 }
+
+section#overview {
+    padding-top: 150px;
+    background-image: url('/assets/img/ride-sharing-header-background.svg');
+    background-position: top;
+}
+
+#intro-ride-sharing {
+    height: 45dvh;
+    background-color: #cf021a;
+    padding-top: calc(74px);
+}
+
+#intro-ride-sharing svg {
+    border: 3px dashed white;
+    border-radius: 20px;
+    padding: 16px;
+}
+
+.feature-card {
+    background-color: #cf021a;
+    --hvr-ripple-out-border-color: #cf021a;
+}

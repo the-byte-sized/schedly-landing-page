@@ -17,5 +17,6 @@ section#overview {
 }
 
 .feature-card {
-    --hvr-ripple-out-border-color: #4b91e2;
+    background-color: #50e2c3;
+    --hvr-ripple-out-border-color: #50e2c3;
 }

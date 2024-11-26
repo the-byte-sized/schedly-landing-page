@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden mw-100">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,18 +39,31 @@
       crossorigin="anonymous"
     />
 
+    <link rel="stylesheet" href="/assets/css/prism.css" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/index.css" />
+    <link rel="stylesheet" href="/assets/css/beauty-salon.css" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/beauty-salon.css" />
-  </head>
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "p44hql8nbg");
+    </script>
 
-  <body class="beauty-salon-page">
-    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=G-TD0DJ68RLE"
+      src="https://www.googletagmanager.com/gtag/js?id=G-K4QNB500PM"
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -58,13 +71,17 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-      gtag("config", "G-TD0DJ68RLE");
-    </script>
 
+      gtag("config", "G-K4QNB500PM");
+    </script>
+  </head>
+
+  <body class="overflow-x-hidden mw-100 line-numbers">
     <header>
       <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-          <a class="navbar-brand brand-text" href="#">Schedly</a>
+          <a class="navbar-brand" href="/">Schedly</a>
+
           <button
             class="navbar-toggler"
             type="button"
@@ -76,19 +93,14 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
                 <a class="nav-link fs-5" href="#overview">Overview</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#solutions">How Schedly Helps</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#examples">Examples</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#cta">Contact Us</a>
+                <a class="nav-link" href="#features">Features</a>
               </li>
             </ul>
             <div class="d-none d-lg-flex gap-3 align-items-center">
@@ -99,219 +111,475 @@
           </div>
         </div>
       </nav>
+
       <div
         id="intro-beauty-salon"
-        class="d-flex flex-column align-items-center justify-content-center text-center text-white"
+        class="container d-flex align-items-center justify-content-center text-white mw-100"
       >
-        <h1>Streamlined Scheduling for Beauty Salons</h1>
-        <p class="fw-light">
-          Effortlessly manage appointments, resources, and client preferences
-          with <span class="brand-text">Schedly</span>.
-        </p>
-        <div class="d-flex gap-3">
-          <button type="button" class="btn btn-primary">
-            Explore Solutions
-          </button>
-          <button type="button" class="btn btn-outline-light">
-            Learn More
-          </button>
+        <div class="d-flex flex-column align-items-center gap-2">
+          <div
+            class="d-flex flex-column align-items-center gap-2"
+            data-aos="slide-down"
+          >
+            <i
+              class="fa-solid fa-spa fa-5x fa-fw"
+              data-aos="zoom-in"
+            ></i>
+
+            <h1 class="fs-3">Beauty Salons Reservation System</h1>
+          </div>
+
+          <div class="w-50" data-aos="slide-up">
+            <p class="fw-light">
+              A busy beauty salon offers a wide range of services, including
+              haircuts, coloring, styling, manicures, pedicures, facials, and
+              massages.
+            </p>
+
+            <p class="fw-light">
+              Each service requires different durations, specialized staff, and
+              sometimes specific equipment or rooms.
+            </p>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
-      <!-- Overview Section -->
-      <section id="overview" class="py-5">
-        <div class="container text-center">
-          <h2 class="fw-bold">
-            Why <span class="brand-text">Schedly</span> for Beauty Salons?
-          </h2>
-          <p class="fw-light">
-            Transform your salon's operations with
-            <span class="brand-text">Schedly</span>. From resource management to
-            personalized services, we handle the complexities, so you can focus
-            on delivering exceptional experiences.
-          </p>
-        </div>
-      </section>
-
-      <!-- How Schedly Helps Section -->
-      <section id="solutions" class="py-5 bg-light">
+      <section id="overview">
         <div class="container">
-          <h3 class="fw-bold text-center">
-            How <span class="brand-text">Schedly</span> Helps
-          </h3>
-          <div class="row mt-4">
-            <div class="col-md-4 text-center">
-              <i class="fa-solid fa-clock fa-2x text-primary"></i>
-              <h4>Service-Specific Scheduling</h4>
-              <p>
-                Define durations and assign services to qualified staff to
-                prevent errors.
-              </p>
-            </div>
-            <div class="col-md-4 text-center">
-              <i class="fa-solid fa-user-clock fa-2x text-primary"></i>
-              <h4>Staff Availability</h4>
-              <p>
-                Manage individual schedules with real-time updates for
-                emergencies.
-              </p>
-            </div>
-            <div class="col-md-4 text-center">
-              <i class="fa-solid fa-chair fa-2x text-primary"></i>
-              <h4>Resource Allocation</h4>
-              <p>Book treatment rooms and equipment to avoid conflicts.</p>
+          <div class="mt-4">
+            <div class="container my-5">
+              <div class="row row row-gap-5">
+                <div class="col-sm-12 col-md-6">
+                  <a href="/use-cases/healthcare.html">
+                    <div
+                      class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+                      data-aos="slide-right"
+                    >
+                      <div
+                        class="card-title d-flex flex-column align-items-center gap-2"
+                      >
+                        <i class="fa-solid fa-user-clock fa-2x fa-fw"></i>
+
+                        <h1 class="fs-3">Staff Availability</h1>
+                      </div>
+
+                      <p class="fw-light">
+                        Manage individual schedules with real-time updates for
+                        emergencies.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <a href="/use-cases/healthcare.html">
+                    <div
+                      class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+                      data-aos="slide-left"
+                    >
+                      <div
+                        class="card-title d-flex flex-column align-items-center gap-2"
+                      >
+                        <i class="fa-solid fa-calendar-check fa-2x fa-fw"></i>
+
+                        <h1 class="fs-3">Conflict Prevention</h1>
+                      </div>
+
+                      <p class="fw-light">
+                        Automatically prevent double bookings of rooms and
+                        resources.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <a href="/use-cases/healthcare.html">
+                    <div
+                      class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+                      data-aos="slide-right"
+                    >
+                      <div
+                        class="card-title d-flex flex-column align-items-center gap-2"
+                      >
+                        <i class="fa-solid fa-chair fa-2x fa-fw"></i>
+
+                        <h1 class="fs-3">Resource Allocation</h1>
+                      </div>
+
+                      <p class="fw-light">
+                        Book treatment rooms and equipment to avoid conflicts.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <a href="/use-cases/healthcare.html">
+                    <div
+                      class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+                      data-aos="slide-left"
+                    >
+                      <div
+                        class="card-title d-flex flex-column align-items-center gap-2"
+                      >
+                        <i class="fa-solid fa-sync fa-2x fa-fw"></i>
+
+                        <h1 class="fs-3">Recurring Appointments</h1>
+                      </div>
+
+                      <p class="fw-light">
+                        Allow clients to book regular appointments with their
+                        preferred staff.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="row mt-4">
-            <div class="col-md-4 text-center">
-              <i class="fa-solid fa-calendar-check fa-2x text-primary"></i>
-              <h4>Recurring Appointments</h4>
-              <p>
-                Allow clients to book regular appointments with their preferred
-                staff.
-              </p>
-            </div>
-            <div class="col-md-4 text-center">
-              <i class="fa-solid fa-envelope fa-2x text-primary"></i>
-              <h4>Automated Notifications</h4>
-              <p>Send reminders to reduce no-shows and enhance engagement.</p>
-            </div>
-            <div class="col-md-4 text-center">
-              <i class="fa-solid fa-users fa-2x text-primary"></i>
-              <h4>Client Preferences</h4>
-              <p>
-                Store client details and preferences for a personalized
-                experience.
-              </p>
-            </div>
-          </div>
+
+          <!-- <pre>
+            <code class="language-typescript" data-plugin-header="show-language">
+              const {entityId} = await schedly.createEntity();
+              await schedly.addEvent({
+                entityId,
+                startDate: "today"
+              })
+            </code>
+          </pre> -->
         </div>
       </section>
 
-      <!-- Examples Section -->
-      <section id="examples" class="py-5" style="background-color: #50e2c3">
-        <div class="container text-white">
-          <h3 class="fw-bold text-center">Examples</h3>
-          <div class="row mt-4">
-            <div class="col-md-6">
-              <h4>Service Scheduling Example</h4>
-              <pre><code>{
-  "service": "Facial",
-  "duration": "60 minutes",
-  "staff": ["Therapist A"],
-  "resources": ["Room 2"]
-}</code></pre>
+      <div class="container">
+        <a href="">
+          <div
+            id="next-use-case"
+            class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+            data-aos="zoom-in"
+          >
+            <div class="card-title d-flex flex-column align-items-center gap-2">
+              <i class="fa-solid fa-lightbulb fa-2x fa-fw"></i>
+
+              <h1 class="fs-3">Ready to Elevate Your Salon's Scheduling?</h1>
+              <p class="fw-light">
+                Join hundreds of salons using Schedly to transform their
+                operations and enhance client satisfaction.
+              </p>
+              <p class="fw-light">Elevate your business now</p>
             </div>
-            <div class="col-md-6">
-              <h4>Automated Reminder Example</h4>
-              <pre><code>{
-  "client": "Jane Doe",
-  "appointment": "2024-11-25T14:00",
-  "message": "Your facial is scheduled for 2 PM. See you soon!"
-}</code></pre>
+
+            <button
+              class="btn btn-lg rounded-pill hvr-bounce-to-right overflow-hidden hvr-icon-pop aos-init aos-animate mt-3"
+              style="background-color: white"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              Get started today
+              <i class="fa-solid fa-chevron-right hvr-icon"></i>
+            </button>
+          </div>
+        </a>
+      </div>
+
+      <div id="footer-documentation-card-wrapper" class="pb-5 h-100">
+        <div class="container mt-5 px-0 px-md-3 w-100 w-md-auto">
+          <div
+            class="documentation-card rounded-sm-0 rounded-5 d-flex flex-column align-items-center gap-5 p-5 text-white w-100"
+            data-aos="zoom-in"
+          >
+            <div class="text-center">
+              <h1 data-aos="fade-down">
+                Integrate
+                <span class="brand-text text-white">Schedly</span> your way
+              </h1>
+
+              <h2
+                class="fw-light fs-5 mt-3 w-sm-100 w-lg-50 mx-auto"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                Schedly adapts to your workflow with ease. Use our robust API
+                for direct integration or speed up development with ready-to-go
+                SDKs for multiple platforms.
+              </h2>
+            </div>
+
+            <button
+              class="btn btn-lg rounded-pill hvr-bounce-to-right overflow-hidden hvr-icon-pop"
+              style="background-color: white"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              View documentation
+              <i class="fa-solid fa-chevron-right hvr-icon"></i>
+            </button>
+
+            <div
+              class="d-flex align-items-center flex-md-row flex-column justify-content-between w-sm-100 w-lg-50 sdk-list"
+            >
+              <a
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                href=""
+                data-aos="zoom-in-right"
+                data-aos-delay="400"
+              >
+                <i class="fa-brands fa-hive fa-3x"></i>
+
+                <p class="mb-0">REST</p>
+              </a>
+
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+              >
+                <i class="fa-brands fa-js fa-3x"></i>
+
+                <p class="mb-0">JavaScript</p>
+              </a>
+
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="600"
+              >
+                <i class="fa-brands fa-java fa-3x"></i>
+
+                <p class="mb-0">Java</p>
+              </a>
+
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="700"
+              >
+                <i class="fa-brands fa-android fa-3x"></i>
+
+                <p class="mb-0">Android</p>
+              </a>
+
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="800"
+              >
+                <i class="fa-brands fa-apple fa-3x"></i>
+
+                <p class="mb-0">iOS</p>
+              </a>
+
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in-left"
+                data-aos-delay="850"
+              >
+                <i class="fa-brands fa-flutter fa-3x"></i>
+
+                <p class="mb-0">Flutter</p>
+              </a>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- CTA Section -->
-      <section id="cta" class="py-5">
-        <div class="container text-center">
-          <h3 class="fw-bold">Ready to Elevate Your Salon's Scheduling?</h3>
-          <p class="fw-light">
-            Join hundreds of salons using
-            <span class="brand-text">Schedly</span> to transform their
-            operations and enhance client satisfaction.
-          </p>
-          <button class="btn btn-lg btn-primary mt-3">Get Started Now</button>
-        </div>
-      </section>
+      </div>
     </main>
 
+    <!-- Footer Decoration -->
+    <div id="footer-decoration"></div>
+
     <!-- Footer -->
+
     <footer class="p-4 text-white">
       <div class="container">
         <div class="row">
           <div class="col-md-3">
             <ul class="list-inline">
               <li class="fw-bold">Use Cases</li>
+
               <li>
-                <a href="/use-cases/healthcare.html" class="fw-light link-light"
+                <a
+                  href="/use-cases/healthcare.html"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
                   >Healthcare</a
                 >
               </li>
+
               <li>
-                <a href="/use-cases/education.html" class="fw-light link-light"
+                <a
+                  href="/use-cases/education.html"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
                   >Education</a
                 >
               </li>
+
               <li>
                 <a
                   href="/use-cases/coworking-space-management.html"
-                  class="fw-light link-light"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
                   >Co-working Space Management</a
                 >
               </li>
+
               <li>
                 <a
                   href="/use-cases/ride-sharing.html"
-                  class="fw-light link-light"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
                   >Ride Sharing Service</a
                 >
               </li>
+
               <li>
                 <a
                   href="/use-cases/beauty-salon.html"
-                  class="fw-light link-light"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
                   >Beauty Salon</a
                 >
               </li>
             </ul>
           </div>
+
           <div class="col-md-3">
             <ul class="list-inline">
               <li class="fw-bold">For developers</li>
-              <li><a href="#" class="fw-light link-light">Documentation</a></li>
-              <li><a href="#" class="fw-light link-light">API Reference</a></li>
-              <li><a href="#" class="fw-light link-light">Changelog</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <ul class="list-inline">
-              <li class="fw-bold">Product</li>
-              <li><a href="#" class="fw-light link-light">Why Schedly</a></li>
-              <li><a href="#" class="fw-light link-light">Features</a></li>
-              <li><a href="#" class="fw-light link-light">Pricing</a></li>
               <li>
-                <a href="#" class="fw-light link-light">Terms & Conditions</a>
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Documentation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >API Reference</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Changelog</a
+                >
               </li>
             </ul>
           </div>
+
+          <div class="col-md-3">
+            <ul class="list-inline">
+              <li class="fw-bold">Product</li>
+              <li>
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Why Schedly</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+
           <div class="col-md-3">
             <ul class="list-inline">
               <li class="fw-bold">Company</li>
-              <li><a href="#" class="fw-light link-light">About us</a></li>
-              <li><a href="#" class="fw-light link-light">Contact</a></li>
-              <li><a href="#" class="fw-light link-light">Privacy</a></li>
               <li>
-                <a href="#" class="fw-light link-light">Terms & Conditions</a>
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Privacy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fw-light link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >Terms & Conditions</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </div>
+
       <hr />
     </footer>
 
-    <!-- Font Awesome -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
-
-    <!-- AOS -->
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
-
-    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"
+    integrity="sha512-tnNM6PPNOVfZ5sGPw6hThCrcUBeqt2mVEk3EAj8tCtuMHqbuVm5/HsZagrr8W2aaFE+6rKIByGwQbEnmodrYVg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+    integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/monaco-editor/min/vs/loader.js"></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/index.global.min.js"
+    integrity="sha512-PneTXNl1XRcU6n5B1PGTDe3rBXY04Ht+Eddn/NESwvyc+uV903kiyuXCWgL/OfSUgnr8HLSGqotxe6L8/fOvwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script src="/assets/js/prism.js"></script>
+  <script src="/assets/js/beauty-salon.js"></script>
 </html>
