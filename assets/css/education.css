@@ -1,0 +1,22 @@
+section#overview {
+    padding-top: 150px;
+    background-image: url('/assets/img/education-header-background.svg');
+    background-position: top;
+}
+
+#intro-education {
+    height: 45dvh;
+    background-color: #f5a524;
+    padding-top: calc(74px);
+}
+
+#intro-education svg {
+    border: 3px dashed white;
+    border-radius: 20px;
+    padding: 16px;
+}
+
+.feature-card {
+    background-color: #f5a524;
+    --hvr-ripple-out-border-color: #f5a524;
+}
