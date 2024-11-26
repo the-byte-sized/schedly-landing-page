@@ -1,42 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://schedly.thebytesized.com/</loc>
-  <lastmod>2024-11-26T10:20:28+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://schedly.thebytesized.com/use-cases/healthcare.html</loc>
-  <lastmod>2024-11-26T10:20:28+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://schedly.thebytesized.com/use-cases/education.html</loc>
-  <lastmod>2024-11-26T10:20:28+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://schedly.thebytesized.com/use-cases/coworking-space-management.html</loc>
-  <lastmod>2024-11-26T10:20:28+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://schedly.thebytesized.com/use-cases/ride-sharing.html</loc>
-  <lastmod>2024-11-26T10:20:28+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://schedly.thebytesized.com/use-cases/beauty-salon.html</loc>
-  <lastmod>2024-11-26T10:20:28+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://schedly.thebytesized.com/</loc>
+  </url>
+  <url>
+    <loc>https://schedly.thebytesized.com/use-cases/healthcare.html</loc>
+  </url>
+  <url>
+    <loc>https://schedly.thebytesized.com/use-cases/education.html</loc>
+  </url>
+  <url>
+    <loc>https://schedly.thebytesized.com/use-cases/coworking-space-management.html</loc>
+  </url>
+  <url>
+    <loc>https://schedly.thebytesized.com/use-cases/ride-sharing.html</loc>
+  </url>
+  <url>
+    <loc>https://schedly.thebytesized.com/use-cases/beauty-salon.html</loc>
+  </url>
 </urlset>

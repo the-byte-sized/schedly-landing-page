@@ -1,0 +1,15 @@
+{
+  "name": "schedly-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "sitemap-generator-cli": "^7.5.0"
+  },
+  "scripts": {
+    "generate:sitemap": "sitemap-generator https://schedly.thebytesized.com -o sitemap.xml"
+  },
+  "keywords": [],
+  "author": "Claudio Cortese",
+  "license": "ISC"
+}
