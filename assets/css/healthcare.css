@@ -1,16 +1,21 @@
 section#overview {
+    padding-top: 150px;
     background-image: url('/assets/img/healthcare-header-background.svg');
     background-position: top;
 }
 
 #intro-healthcare {
-    height: 22dvh;
+    height: 50dvh;
     background-color: #50e2c3;
-    margin-top: 74px;
+    padding-top: calc(74px);
 }
 
 #intro-healthcare svg {
     border: 3px dashed white;
     border-radius: 20px;
     padding: 16px;
+}
+
+.feature-card {
+    --hvr-ripple-out-border-color: #4b91e2;
 }

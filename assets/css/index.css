@@ -140,6 +140,7 @@ header nav {
 .feature-card {
     background: #4b91e2;
     color: white;
+    border-radius: 15px;
     padding: 25px;
     text-align: center;
     --hvr-ripple-out-border-radius: var(--bs-border-radius-xxl);
@@ -204,7 +205,6 @@ section#use-cases {
 
 #healthcare-use-case {
     background-color: #50e2c3;
-
 }
 
 #education-use-case {
@@ -280,13 +280,6 @@ section#use-cases {
 .nav-link.active {
     --bs-navbar-active-color: #4b91e2;
     font-weight: bold;
-}
-
-.feature-card {
-    background: #4b91e2;
-    padding: 20px;
-    border-radius: 15px;
-    color: white;
 }
 
 .white-space-pre-line {

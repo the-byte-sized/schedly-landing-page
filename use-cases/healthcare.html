@@ -37,6 +37,8 @@
       crossorigin="anonymous"
     />
 
+    <link rel="stylesheet" href="/assets/css/prism.css" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/index.css" />
     <link rel="stylesheet" href="/assets/css/healthcare.css" />
@@ -57,7 +59,7 @@
     gtag("config", "G-TD0DJ68RLE");
   </script>
 
-  <body class="overflow-x-hidden mw-100">
+  <body class="overflow-x-hidden mw-100 line-numbers">
     <header>
       <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
@@ -96,25 +98,21 @@
         class="container d-flex align-items-center justify-content-center text-white mw-100"
       >
         <div class="d-flex flex-column align-items-center gap-2">
-          <i class="fa-solid fa-stethoscope fa-5x fa-fw"></i>
+          <div
+            class="d-flex flex-column align-items-center gap-2"
+            data-aos="slide-down"
+          >
+            <i
+              class="fa-solid fa-stethoscope fa-5x fa-fw"
+              data-aos="zoom-in"
+            ></i>
 
-          <h1 class="fs-3">Why Schedly for Healthcare?</h1>
+            <h1 class="fs-3">
+              Appointment Scheduling for a Multi-Specialty Clinic
+            </h1>
+          </div>
 
-          <p class="fw-light">
-            Built for the demands of busy healthcare environments, Schedly
-            empowers professionals to focus on what matters most: patient care.
-          </p>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section id="overview" class="py-5">
-        <div class="container text-center">
-          <div>
-            <h3 class="fw-bold">
-              Use Case: Appointment Scheduling for a Multi-Specialty Clinic
-            </h3>
+          <div class="w-50" data-aos="slide-up">
             <p class="fw-light">
               A bustling multi-specialty clinic offers services ranging from
               general practice to specialized treatments. Managing appointments
@@ -122,42 +120,260 @@
               cancellations, and accommodating emergency visits present
               significant challenges.
             </p>
-          </div>
 
-          <div class="mt-4">
-            <h3 class="fw-bold">How Schedly Helps</h3>
-            <ul
-              class="list-unstyled text-start mx-auto"
-              style="max-width: 800px"
-            >
-              <li class="mb-3">
-                <i class="fa-solid fa-check text-primary"></i>
-                <strong>Advanced Availability Management:</strong> Set up
-                individual schedules for each doctor, including specific working
-                hours, days off, and vacation periods.
-              </li>
-              <li class="mb-3">
-                <i class="fa-solid fa-check text-primary"></i>
-                <strong>Exception Handling:</strong> Easily block out time slots
-                for emergencies, conferences, or personal commitments using the
-                blacklist feature.
-              </li>
-              <li class="mb-3">
-                <i class="fa-solid fa-check text-primary"></i>
-                <strong>Recurring Appointments:</strong> Schedule regular
-                check-ups or treatments with recurring rules, ensuring
-                consistency for patients needing ongoing care.
-              </li>
-              <li class="mb-3">
-                <i class="fa-solid fa-check text-primary"></i>
-                <strong>Real-Time Updates:</strong> Provide instant updates to
-                patients about appointment availability, reducing wait times and
-                enhancing patient satisfaction.
-              </li>
-            </ul>
+            <p class="fw-light">
+              Managing appointments for numerous doctors with varying schedules,
+              handling last-minute cancellations, and accommodating emergency
+              visits present significant challenges.
+            </p>
           </div>
         </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="overview">
+        <div class="container">
+          <div class="mt-4">
+            <div class="container my-5">
+              <div class="row row row-gap-5">
+                <div class="col-sm-12 col-md-6">
+                  <a href="/use-cases/healthcare.html">
+                    <div
+                      class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+                      data-aos="slide-right"
+                    >
+                      <div
+                        class="card-title d-flex flex-column align-items-center gap-2"
+                      >
+                        <i class="fa-solid fa-layer-group fa-2x fa-fw"></i>
+                        <h1 class="fs-3">Advanced Availability Management</h1>
+                      </div>
+
+                      <p class="fw-light">
+                        Set up individual schedules for each doctor, including
+                        specific working hours, days off, and vacation periods.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <a href="/use-cases/healthcare.html">
+                    <div
+                      class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+                      data-aos="slide-left"
+                    >
+                      <div
+                        class="card-title d-flex flex-column align-items-center gap-2"
+                      >
+                        <i class="fa-solid fa-filter fa-2x fa-fw"></i>
+                        <h1 class="fs-3">Exception Handling</h1>
+                      </div>
+
+                      <p class="fw-light">
+                        Easily block out time slots for emergencies,
+                        conferences, or personal commitments using the blacklist
+                        feature.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <a href="/use-cases/healthcare.html">
+                    <div
+                      class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+                      data-aos="slide-right"
+                    >
+                      <div
+                        class="card-title d-flex flex-column align-items-center gap-2"
+                      >
+                        <i class="fa-solid fa-sync fa-2x fa-fw"></i>
+                        <h1 class="fs-3">Recurring Appointments</h1>
+                      </div>
+                      <p class="fw-light">
+                        Schedule regular check-ups or treatments with recurring
+                        rules, ensuring consistency for patients needing ongoing
+                        care.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <a href="/use-cases/healthcare.html">
+                    <div
+                      class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+                      data-aos="slide-left"
+                    >
+                      <div
+                        class="card-title d-flex flex-column align-items-center gap-2"
+                      >
+                        <i class="fa-solid fa-clock fa-2x fa-fw"></i>
+                        <h1 class="fs-3">Real-Time Updates</h1>
+                      </div>
+                      <p class="fw-light">
+                        Provide instant updates to patients about appointment
+                        availability, reducing wait times and enhancing patient
+                        satisfaction.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <pre>
+            <code class="language-typescript" data-plugin-header="show-language">
+              const {entityId} = await schedly.createEntity();
+              await schedly.addEvent({
+                entityId,
+                startDate: "today"
+              })
+            </code>
+          </pre> -->
+        </div>
       </section>
+
+      <div class="container">
+        <a href="">
+          <div
+            id="next-use-case"
+            class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+            data-aos="zoom-in"
+          >
+            <div class="card-title d-flex flex-column align-items-center gap-2">
+              <i class="fa-solid fa-lightbulb fa-2x fa-fw"></i>
+
+              <h1 class="fs-3">Your Business Could Be Next</h1>
+              <p class="fw-light">
+                Imagine the transformation Schedly can bring to your business.
+                Join the companies that have revolutionized their scheduling with
+                our innovative solutions.
+              </p>
+              <p class="fw-light">Ready to take the next step?</p>
+            </div>
+
+            <button
+              class="btn btn-lg rounded-pill hvr-bounce-to-right overflow-hidden hvr-icon-pop aos-init aos-animate mt-3"
+              style="background-color: white"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              Get started today
+              <i class="fa-solid fa-chevron-right hvr-icon"></i>
+            </button>
+          </div>
+        </a>
+      </div>
+
+      <div id="footer-documentation-card-wrapper" class="pb-5 h-100">
+        <div class="container mt-5 px-0 px-md-3 w-100 w-md-auto">
+          <div
+            class="documentation-card rounded-sm-0 rounded-5 d-flex flex-column align-items-center gap-5 p-5 text-white w-100"
+            data-aos="zoom-in"
+          >
+            <div class="text-center">
+              <h1 data-aos="fade-down">
+                Integrate
+                <span class="brand-text text-white">Schedly</span> your way
+              </h1>
+
+              <h2
+                class="fw-light fs-5 mt-3 w-sm-100 w-lg-50 mx-auto"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                Schedly adapts to your workflow with ease. Use our robust API
+                for direct integration or speed up development with ready-to-go
+                SDKs for multiple platforms.
+              </h2>
+            </div>
+
+            <button
+              class="btn btn-lg rounded-pill hvr-bounce-to-right overflow-hidden hvr-icon-pop"
+              style="background-color: white"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              View documentation
+              <i class="fa-solid fa-chevron-right hvr-icon"></i>
+            </button>
+
+            <div
+              class="d-flex align-items-center flex-md-row flex-column justify-content-between w-sm-100 w-lg-50 sdk-list"
+            >
+              <a
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                href=""
+                data-aos="zoom-in-right"
+                data-aos-delay="400"
+              >
+                <i class="fa-brands fa-hive fa-3x"></i>
+
+                <p class="mb-0">REST</p>
+              </a>
+
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+              >
+                <i class="fa-brands fa-js fa-3x"></i>
+
+                <p class="mb-0">JavaScript</p>
+              </a>
+
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="600"
+              >
+                <i class="fa-brands fa-java fa-3x"></i>
+
+                <p class="mb-0">Java</p>
+              </a>
+
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="700"
+              >
+                <i class="fa-brands fa-android fa-3x"></i>
+
+                <p class="mb-0">Android</p>
+              </a>
+
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="800"
+              >
+                <i class="fa-brands fa-apple fa-3x"></i>
+
+                <p class="mb-0">iOS</p>
+              </a>
+
+              <a
+                href=""
+                class="p-3 hvr-fade rounded-4 text-white text-decoration-none d-flex flex-column align-items-center gap-3"
+                data-aos="zoom-in-left"
+                data-aos-delay="850"
+              >
+                <i class="fa-brands fa-flutter fa-3x"></i>
+
+                <p class="mb-0">Flutter</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- Footer Decoration -->
@@ -349,5 +565,6 @@
     referrerpolicy="no-referrer"
   ></script>
 
-  <script src="/index.js"></script>
+  <script src="/assets/js/prism.js"></script>
+  <script src="/assets/js/healthcare.js"></script>
 </html>
