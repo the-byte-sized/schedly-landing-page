@@ -2,6 +2,7 @@ section#overview {
     padding-top: 150px;
     background-image: url('/assets/img/education-header-background.svg');
     background-position: top;
+    background-repeat: repeat-x;
 }
 
 #intro-education {
