@@ -81,7 +81,8 @@
     <header>
       <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="/">Schedly</a>
+          <a class="navbar-brand" href="/"> Schedly </a>
+
           <button
             class="navbar-toggler"
             type="button"
@@ -93,18 +94,35 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+
+          <div
+            class="collapse navbar-collapse position-relative"
+            id="navbarNav"
+          >
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link fs-5" href="#overview">Overview</a>
+                <a class="nav-link" aria-current="page" href="#overview"
+                  >Overview</a
+                >
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="#features">Features</a>
+                <a class="nav-link" href="#use-cases">Use cases</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
               </li>
             </ul>
-            <div class="d-none d-lg-flex gap-3 align-items-center">
-              <button class="btn btn-lg rounded-pill text-white">
-                Get Started
+
+            <div
+              class="d-none d-lg-flex gap-3 align-items-center position-absolute start-100 w-100"
+            >
+              <button
+                class="start-building-btn btn btn-lg rounded-pill text-white hvr-ripple-out hvr-icon-forward hvr-shadow"
+              >
+                Start building
+                <i class="fa-solid fa-chevron-right hvr-icon"></i>
               </button>
             </div>
           </div>
@@ -142,87 +160,79 @@
             <div class="container my-5">
               <div class="row row row-gap-5">
                 <div class="col-sm-12 col-md-6">
-                  <a href="/use-cases/healthcare.html">
+                  <div
+                    class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+                    data-aos="slide-right"
+                  >
                     <div
-                      class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
-                      data-aos="slide-right"
+                      class="card-title d-flex flex-column align-items-center gap-2"
                     >
-                      <div
-                        class="card-title d-flex flex-column align-items-center gap-2"
-                      >
-                        <i class="fa-solid fa-calendar fa-2x fa-fw"></i>
+                      <i class="fa-solid fa-calendar fa-2x fa-fw"></i>
 
-                        <h1 class="fs-3">Flexible Scheduling Rules</h1>
-                      </div>
-
-                      <p class="fw-light">
-                        Set up individual schedules for each doctor, including
-                        specific working hours, days off, and vacation periods.
-                      </p>
+                      <h1 class="fs-3">Flexible Scheduling Rules</h1>
                     </div>
-                  </a>
+
+                    <p class="fw-light">
+                      Set up individual schedules for each doctor, including
+                      specific working hours, days off, and vacation periods.
+                    </p>
+                  </div>
                 </div>
 
                 <div class="col-sm-12 col-md-6">
-                  <a href="/use-cases/healthcare.html">
+                  <div
+                    class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+                    data-aos="slide-left"
+                  >
                     <div
-                      class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
-                      data-aos="slide-left"
+                      class="card-title d-flex flex-column align-items-center gap-2"
                     >
-                      <div
-                        class="card-title d-flex flex-column align-items-center gap-2"
-                      >
-                        <i class="fa-solid fa-clock fa-2x fa-fw"></i>
+                      <i class="fa-solid fa-clock fa-2x fa-fw"></i>
 
-                        <h1 class="fs-3">Unpredictable Schedules</h1>
-                      </div>
-
-                      <p class="fw-light">
-                        Managing driver availability and part-time engagement
-                        poses significant hurdles.
-                      </p>
+                      <h1 class="fs-3">Unpredictable Schedules</h1>
                     </div>
-                  </a>
+
+                    <p class="fw-light">
+                      Managing driver availability and part-time engagement
+                      poses significant hurdles.
+                    </p>
+                  </div>
                 </div>
 
                 <div class="col-sm-12 col-md-6">
-                  <a href="/use-cases/healthcare.html">
+                  <div
+                    class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+                    data-aos="slide-right"
+                  >
                     <div
-                      class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
-                      data-aos="slide-right"
+                      class="card-title d-flex flex-column align-items-center gap-2"
                     >
-                      <div
-                        class="card-title d-flex flex-column align-items-center gap-2"
-                      >
-                        <i class="fa-solid fa-gavel fa-2x fa-fw"></i>
+                      <i class="fa-solid fa-gavel fa-2x fa-fw"></i>
 
-                        <h1 class="fs-3">Regulatory Compliance</h1>
-                      </div>
-                      <p class="fw-light">Adhere to laws on working hours.</p>
+                      <h1 class="fs-3">Regulatory Compliance</h1>
                     </div>
-                  </a>
+                    <p class="fw-light">Adhere to laws on working hours.</p>
+                  </div>
                 </div>
 
                 <div class="col-sm-12 col-md-6">
-                  <a href="/use-cases/healthcare.html">
+                  <div
+                    class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+                    data-aos="slide-left"
+                  >
                     <div
-                      class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
-                      data-aos="slide-left"
+                      class="card-title d-flex flex-column align-items-center gap-2"
                     >
-                      <div
-                        class="card-title d-flex flex-column align-items-center gap-2"
-                      >
-                        <i class="fa-solid fa-bell fa-2x fa-fw"></i>
+                      <i class="fa-solid fa-bell fa-2x fa-fw"></i>
 
-                        <h1 class="fs-3">Real-Time Updates</h1>
-                      </div>
-                      <p class="fw-light">
-                        Provide instant updates to clients about riders
-                        availability, reducing wait times and enhancing
-                        satisfaction.
-                      </p>
+                      <h1 class="fs-3">Real-Time Updates</h1>
                     </div>
-                  </a>
+                    <p class="fw-light">
+                      Provide instant updates to clients about riders
+                      availability, reducing wait times and enhancing
+                      satisfaction.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -233,8 +243,7 @@
       <div class="container">
         <a href="">
           <div
-            id="next-use-case"
-            class="feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
+            class="next-use-case feature-card rounded-5 w-100 h-100 hvr-shadow hvr-ripple-out"
             data-aos="zoom-in"
           >
             <div class="card-title d-flex flex-column align-items-center gap-2">

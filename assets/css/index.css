@@ -132,11 +132,6 @@ section#use-cases {
     --hvr-ripple-out-border-color: #4b91e2;
 }
 
-#next-use-case {
-    background-color: hotpink;
-    --hvr-ripple-out-border-color: hotpink;
-}
-
 #pricing {
     background-color: #50e2c3;
 }

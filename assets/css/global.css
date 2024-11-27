@@ -25,7 +25,7 @@ header nav {
     font-size: xx-large;
 }
 
-.navbar button {
+.navbar .start-building-btn {
     background-color: #50e2c3;
     --bs-btn-hover-bg: #50e2c3;
 }
@@ -114,4 +114,9 @@ footer ul li {
 
 .documentation-card {
     background: #4b91e2;
+}
+
+.next-use-case {
+    background-color: hotpink !important;
+    --hvr-ripple-out-border-color: hotpink !important;
 }

@@ -3,6 +3,7 @@ section#overview {
     background-image: url('/assets/img/coworking-header-background.svg');
     background-position: top;
     background-repeat: repeat-x;
+    transform: translateY(-1px);
 }
 
 #intro-coworking {
