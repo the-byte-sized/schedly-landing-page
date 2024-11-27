@@ -285,3 +285,22 @@ section#use-cases {
 .white-space-pre-line {
     white-space: pre-line;
 }
+
+section {
+    scroll-margin-top: 74px;
+}
+
+#free-plan-card .btn {
+    --bs-btn-color: #50e2c3;
+    --bs-btn-border-color: #50e2c3;
+    --bs-btn-hover-bg: #50e2c3;
+    --bs-btn-hover-border-color: #50e2c3;
+}
+
+#premium-plan-card .btn {
+    --bs-btn-color: #cf021a;
+    --bs-btn-bg: white;
+    --bs-btn-border-color: #cf021a;
+    --bs-btn-hover-bg: #cf021a;
+    --bs-btn-hover-border-color: #cf021a;
+}
