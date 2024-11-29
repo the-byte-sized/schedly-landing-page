@@ -25,7 +25,7 @@ header nav {
     font-size: xx-large;
 }
 
-.navbar .start-building-btn {
+.start-building-btn {
     background-color: #50e2c3;
     --bs-btn-hover-bg: #50e2c3;
 }
@@ -119,4 +119,19 @@ footer ul li {
 .next-use-case {
     background-color: hotpink !important;
     --hvr-ripple-out-border-color: hotpink !important;
+}
+
+.coming-soon-icon {
+    color: #50e2c3;
+    left: 50px;
+    top: -50px;
+}
+
+.sdk-list-item:focus .coming-soon-icon,
+.sdk-list-item:hover .coming-soon-icon {
+    color: #4b91e2;
+}
+
+.sdk-list-item.disabled {
+    cursor: pointer;
 }

@@ -354,6 +354,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         }, 600);
     });
 
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    popoverTriggerList.forEach(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
 });
 
 // Funzione per simulare la digitazione
