@@ -333,10 +333,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         setTimeout(() => {
             // Cambia i valori dopo la transizione di uscita
             if (billingToggle.checked) {
-                monthlyPrice.textContent = '€12';
+                monthlyPrice.textContent = '€504';
                 billingCycle.textContent = '/yr';
             } else {
-                monthlyPrice.textContent = '€15';
+                monthlyPrice.textContent = '€50';
                 billingCycle.textContent = '/mo';
             }
 
