@@ -30,13 +30,17 @@ header nav {
     --bs-btn-hover-bg: #50e2c3;
 }
 
+nav .start-building-btn {
+    width: fit-content;
+    left: 90%;
+}
+
 .brand-text {
     font-family: "Pacifico", cursive;
     font-weight: 400;
     font-style: normal;
     color: #4b91e2;
 }
-
 
 .hvr-bounce-to-right:before {
     background: #50e2c3;
