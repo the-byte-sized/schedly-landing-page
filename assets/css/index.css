@@ -1,5 +1,5 @@
 body.index-page header {
-    height: 100dvh;
+    min-height: 100dvh;
 }
 
 body.index-page header::after {
@@ -102,7 +102,7 @@ section#overview {
 }
 
 section#use-cases {
-    height: 100dvh;
+    min-height: 100dvh;
 }
 
 .sdk-list>* {
