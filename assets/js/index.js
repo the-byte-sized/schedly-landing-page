@@ -321,38 +321,38 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     });
 
-    const billingToggle = document.getElementById('billingToggle');
-    const monthlyPrice = document.getElementById('monthlyPrice');
-    const billingCycle = document.getElementById('billingCycle');
+    // const billingToggle = document.getElementById('billingToggle');
+    // const monthlyPrice = document.getElementById('monthlyPrice');
+    // const billingCycle = document.getElementById('billingCycle');
 
-    billingToggle.addEventListener('change', () => {
-        // Aggiungi classe per animazione di uscita
-        monthlyPrice.classList.add('fade-out');
-        billingCycle.classList.add('fade-out');
+    // billingToggle.addEventListener('change', () => {
+    //     // Aggiungi classe per animazione di uscita
+    //     monthlyPrice.classList.add('fade-out');
+    //     billingCycle.classList.add('fade-out');
 
-        setTimeout(() => {
-            // Cambia i valori dopo la transizione di uscita
-            if (billingToggle.checked) {
-                monthlyPrice.textContent = '€504';
-                billingCycle.textContent = '/yr';
-            } else {
-                monthlyPrice.textContent = '€50';
-                billingCycle.textContent = '/mo';
-            }
+    //     setTimeout(() => {
+    //         // Cambia i valori dopo la transizione di uscita
+    //         if (billingToggle.checked) {
+    //             monthlyPrice.textContent = '€504';
+    //             billingCycle.textContent = '/yr';
+    //         } else {
+    //             monthlyPrice.textContent = '€50';
+    //             billingCycle.textContent = '/mo';
+    //         }
 
-            // Aggiungi animazione di entrata
-            monthlyPrice.classList.remove('fade-out');
-            billingCycle.classList.remove('fade-out');
-            monthlyPrice.classList.add('fade-in');
-            billingCycle.classList.add('fade-in');
-        }, 300);
+    //         // Aggiungi animazione di entrata
+    //         monthlyPrice.classList.remove('fade-out');
+    //         billingCycle.classList.remove('fade-out');
+    //         monthlyPrice.classList.add('fade-in');
+    //         billingCycle.classList.add('fade-in');
+    //     }, 300);
 
-        // Rimuovi le classi di entrata dopo l'animazione
-        setTimeout(() => {
-            monthlyPrice.classList.remove('fade-in');
-            billingCycle.classList.remove('fade-in');
-        }, 600);
-    });
+    //     // Rimuovi le classi di entrata dopo l'animazione
+    //     setTimeout(() => {
+    //         monthlyPrice.classList.remove('fade-in');
+    //         billingCycle.classList.remove('fade-in');
+    //     }, 600);
+    // });
 
     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
     popoverTriggerList.forEach(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
